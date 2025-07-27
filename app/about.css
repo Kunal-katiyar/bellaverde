@@ -1,0 +1,106 @@
+.citations {
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  overflow: hidden;
+  font-family: "Varela Round", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  padding: 0px 40px 80px 20px;
+
+}
+
+
+.text-container-about {
+  max-width: 900px; /* Matches the image container width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures the text is vertically centered */
+}
+
+.text-container-about h2 {
+  font-family: "Varela Round", serif;
+  color: #84955E;
+  font-size: 25px;
+  
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-container-about h1 {
+  margin-top: -15px;
+  font-family: "Pacifico", serif;
+  color: #33362B;
+  font-size: 70px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+
+
+.text-container-about p {
+  margin-top: 20px;
+  font-family: "Varela Round", serif;
+  color: #33362B;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.text-container-about ul{
+  width: 90%;
+}
+
+.text-container-about li {
+   margin-top: 20px;
+  font-family: "Varela Round", serif;
+  color: #33362B;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+
+.citations h2{
+  margin-top: -15px;
+  font-family: "Pacifico", serif;
+  color: #33362B;
+  opacity: 1 !important;
+  color: #33362B;
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.citations ul {
+  opacity: 0.7;  
+  list-style-type: disc; 
+  padding-left: 20px;   
+}
+
+.citations p {
+  opacity: 0.7;  
+}
+
+
+.citations li {
+  display: list-item; 
+  font-size: 15px;
+}
+
+.hero-section .background-image-ab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-02-02%20at%2012.14.24%20PM.png?v=1738520069526");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  animation: zoom-in 5s ease-in-out forwards;
+  z-index: -1;
+}

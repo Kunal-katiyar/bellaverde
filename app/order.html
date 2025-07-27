@@ -1,0 +1,618 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Verde</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="order.css" />
+
+    <link rel="stylesheet" href="sustainability.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/favicon.ico?v=1738549874466">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/order.js" defer></script>
+    <script src="/navbar.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="mobile-navigation-bar" style="padding-top: 20px">
+      <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sustainability.html">Sustainability</a></li>
+          <li><a href="/reservation.html">Reservations</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+      <div class="background-image"></div>
+
+      <div class="hero-content">
+        <img
+          class="icon"
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          alt="Logo"
+        />
+        <h1 class="web-name">Order</h1>
+
+        <!-- Hamburger Menu (Mobile) -->
+
+
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <img
+                  src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0285.png?v=1737581395668"
+                  alt="Home Icon"
+                />
+              </a>
+            </li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/sustainability.html">Sustainability</a></li>
+            <li><a href="/reservation.html">Reservations</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="full-content">
+      <div class="tab-selection" id="tab-selection">
+        <input type="radio" class="tab-active radio-button" id="button1" onclick="nextStep(1)" name="tab" checked>
+        <label for="button1">Starters</label>
+        <input type="radio" class="radio-button" onclick="nextStep(2)" id="button2" name="tab">
+        <label for="button2">Pizzas</label>
+        <input type="radio" class="radio-button" onclick ="nextStep(3)" id="button3" name="tab">
+        <label for="button3">Entrees</label>
+        <input type="radio" class="radio-button" onclick ="nextStep(4)" id="button4" name="tab">
+        <label for="button4">Pastas</label>
+        <button class="buttonlol checkout-button" type="button" onclick="showSummary()">Order Summary</button>
+      </div>
+      <div class="order-content">
+        
+        <form id="orderForm">
+            <!-- Starters Section -->
+            <div class="menu-section" id="step1">
+                <h3>Starters</h3>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_7.32.47_PM-removebg-preview.png?v=1737423185933">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Mezze-Platter" data-price="14">Mediterranean Mezze Platter</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Mezze-Platter" id="Mediterranean-Mezze-Platter" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_12.04.36_AM-removebg-preview.png?v=1742187903052">
+               <div class="ordering_grid">
+                <label for="Tomato-Burrata" data-price="12">Tomato Burrata</label>
+                  <h4>$12.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Tomato-Burrata" id="Tomato-Burrata" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1694-removebg-preview.png?v=1737426805949">
+               <div class="ordering_grid">
+                <label for="Roasted-Beet-Carpaccio" data-price="14">Roasted Beet Carpaccio</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Roasted-Beet-Carpaccio" id="Roasted-Beet-Carpaccio" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+            </div>
+
+            <!-- Pizzas Section -->
+            <div class="menu-section" id="step2" style="display: none;">
+                <h3>Pizzas</h3>
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.01_PM-removebg-preview%20(1).png?v=1737430683124">
+               <div class="ordering_grid">
+                <label for="Hot-Honey-Pizza" data-price="15">Hot Honey Pizza</label>
+                  <h4>$15.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Hot-Honey-Pizza" id="Hot-Honey-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_1.54.06_PM-removebg-preview.png?v=1742237662561">
+               <div class="ordering_grid">
+                <label for="Margherita-Pizza" data-price="14">Margherita Pizza</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Margherita-Pizza" id="Margherita-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.14_PM-removebg-preview.png?v=1737430677826">
+               <div class="ordering_grid">
+                <label for="Wild-Mushroom-Truffle-Pizza" data-price="17">Wild Mushroom Truffle Pizza</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Wild-Mushroom-Truffle-Pizza" id="Wild-Mushroom-Truffle-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+               <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.19_PM-removebg-preview.png?v=1737430680546">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Delight-Pizza" data-price="16">Mediterranean Delight Pizza</label>
+                  <h4>$16.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Delight-Pizza" id="Mediterranean-Delight-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+            </div>
+
+            <!-- Entrees Section -->
+            <div class="menu-section" id="step3" style="display: none;">
+                <h3>Entrees</h3>
+                <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.39.53_PM-removebg-preview.png?v=1737924042925">
+               <div class="ordering_grid">
+                <label for="Eggplant-Parmesan" data-price="18">Eggplant Parmesan</label>
+                  <h4>$18.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Eggplant-Parmesan" id="Eggplant-Parmesan" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_2.09.24_PM-removebg-preview.png?v=1742238615524">
+               <div class="ordering_grid">
+                <label for="Stuffed-Bell-Peppers" data-price="17">Stuffed Bell Peppers</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Stuffed-Bell-Peppers" id="Stuffed-Bell-Peppers" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.41.50_PM-removebg-preview.png?v=1737924137007">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Veggie-Bowl" data-price="16">Mediterranean Veggie Bowl</label>
+                  <h4>$16.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Veggie-Bowl" id="Mediterranean-Veggie-Bowl" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+               <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.11.13_PM-removebg-preview.png?v=1737925891693">
+               <div class="ordering_grid">
+                <label for="Falafel-Platter" data-price="15">Falafel Platter</label>
+                  <h4>$15.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Falafel-Platter" id="Falafel-Platter" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+            </div>
+
+            <!-- Pastas Section -->
+            <div class="menu-section" id="step4" style="display: none;">
+              
+                <h3>Pastas</h3>
+              <div class="ordering3">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.03.29_PM-removebg-preview.png?v=1737925459752">
+               <div class="ordering_grid">
+                <label for="Pesto-alla-Genovese" data-price="18">Pesto alla Genovese</label>
+                  <h4>$18.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Pesto-alla-Genovese" id="Pesto-alla-Genovese" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.02.29_AM-removebg-preview.png?v=1742274171196">
+
+               <div class="ordering_grid">
+                 
+                <label for="Eggplant-Lasagna" data-price="20">Eggplant Lasagna</label>
+                  <h4>$20.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Eggplant-Lasagna" id="Eggplant-Lasagna" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering3">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.03.47_AM-removebg-preview.png?v=1742274294091">
+              
+               <div class="ordering_grid">
+                <label for="Lumache-alla-Vodka" data-price="17">Lumache alla Vodka</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Lumache-alla-Vodka" id="Lumache-alla-Vodka" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+             
+                
+              
+               <div class="ordering3" id="takeout1">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.05.24_PM-removebg-preview.png?v=1737925553047">
+              
+               <div class="ordering_grid">
+                <label for="Cacio-e-Pepe" data-price="19">Cacio e Pepe</label>
+                  <h4>$19.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Cacio-e-Pepe" id="Cacio-e-Pepe" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3" id="takeout2">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.08.07_AM-removebg-preview.png?v=1742274505102">
+             
+               <div class="ordering_grid">
+                <label for="Rigatoni-alla-Norma" data-price="17">Rigatoni alla Norma</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Rigatoni-alla-Norma" id="Rigatoni-alla-Norma" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3" id="takeout3">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.05.52_AM-removebg-preview.png?v=1742274372767">
+             
+               <div class="ordering_grid">
+                <label for="Campanelle-al-Tartufo" data-price="22">Campanelle al Tartufo</label>
+                  <h4>$22.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Campanelle-al-Tartufo" id="Campanelle-al-Tartufo" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+            </div>
+
+            <!-- Checkout Section (Order Summary) -->
+            <div class="menu-section" id="step5" style="display: none;">
+                <h3>Order Summary</h3>
+                <div id="orderSummary"></div>
+                <p>Total Price: <span id="totalPrice"></span></p>
+                <p>Pickup Time: <span id="pickupTime"></span></p>
+                <button class = "buttonlol" type="button" onclick="showCheckout()">Proceed to Checkout</button>
+            </div>
+
+            <!-- Payment Section (Hidden initially) -->
+        <!-- Payment Section -->
+        <!-- Payment Section (initially hidden) -->
+        <div id="paymentSection">
+            <h1>Payment</h1>
+        <div class="payment-option">
+            <input type="checkbox" id="credit-card-checkbox" name="credit-card" />
+            <span>Credit Card</span>
+        </div>
+            <!-- Credit Card Info -->
+            <div id="credit-card-info" class="payment-info">
+              <div class ="group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="Card number" required>
+              </div>
+              <div class ="group">
+                <label for="exp-date">Expiration Date</label>
+                <input type="text" id="exp-date" placeholder="MM/YY" required>
+              </div>
+              <div class ="group">
+                <label for="security-code">Security Code</label>
+                <input type="text" id="security-code" placeholder="Security code" required>
+              </div>
+              <div class ="group">
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" id="name-on-card" placeholder="Name on card" required>
+              </div>
+                <div class ="group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" required>
+
+              </div>
+                      <div class ="group">
+                <label for="zip-code">Zip-code</label>
+                <input type="text" id="zip-code" placeholder="Zip-code" required>
+
+              </div>
+            </div>
+          <div class="payment-option">
+            <input type="checkbox" id="pay-in-store-checkbox" name="pay-in-store" />
+            <span>Pay in store</span>
+        </div>
+
+            <!-- Error Message (Initially hidden) -->
+            <div id="error-message" style="color: #bd2929; display: none;">
+                <p>Please select a payment option (either Credit Card or Pay in Store).</p>
+            </div>
+
+            <!-- Pay Now Button -->
+          <button class="buttonlol2" type="button" id="pay-now-button" onclick="validatePayment()">Place Order</button>
+
+
+        </div>
+        <!-- Thank You Page (Final Step) -->
+          
+        <div id="thankYouPage" style = "display: none">
+          <div class="subPage">
+            
+            <h1>Order Summary:</h1>
+            <p id="summary">
+              
+            </p>
+            <p id="payment-details">
+              
+            </p>
+        </div>
+          <div class="subPage">
+            
+            <h1>Thank you for your order!</h1>
+            <div class = "back">
+
+
+            <p>By choosing <i>Bella Verde's</i> plant-based meals, you've saved approximately <br><span id="co2Saved">2.5</span> <span id = "of-this"><br>of CO2 this month!</span></p>
+
+            <!-- Radial Progress Bar -->
+            <div class="co2 grid">
+
+
+            <div class="progress-radial progress-70">
+                <b>70%</b>
+
+            </div>
+
+            <p>This represents how much CO2 emissions are reduced when switching from a traditional meat-based meal to a plant-based one.</p>
+                </div>
+            <br>
+            <p id= "proudText">We’re proud to be 100% plant-based, making every meal a contribution to a healthier planet. Thanks for being part of the change!</p>
+          </div>
+        </div>
+        </div>
+        </form>
+    </div>
+      
+    </div>
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            class="footer-img"
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          />
+          <h3>Bella Verde</h3>
+<!--           <p>© [Insert Copyright Here]</p> -->
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#reference-page">Reference Page</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" id="reserve">
+          <h4>Dine-In</h4>
+          <ul class="links">
+            <a href="/reservation.html" style="text-decoration: none">
+              <button class="arrow-button6">
+                Book a reservation<span class="arrow"></span>
+              </button>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col" id="carryout">
+          <div class="container">
+            <h4>Carry-Out Form</h4>
+            <a href="/order.html" style="text-decoration: none">
+              <button class="arrow-button6">Place an order<span class="arrow"></span></button>
+            </a>
+
+          </div>
+        </div>
+        <div class="footer-col" id="newletter-col">
+          <h4>Newsletter</h4>
+          <p>
+            Stay connected with our plant-based kitchen! Subscribe to our
+            newsletter for fresh updates on seasonal vegan & vegetarian dishes,
+            and behind-the-scenes looks at our farm-to-table process.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,880 @@
+/* Modal Style */
+.modal {
+    display: block ; /* Keep modal visible when checkout starts */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: auto !important;
+    bottom: 0;
+    width: 100%;
+    height: 115%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black semi-transparent background */
+    overflow-x: hidden;
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #a0a496 !important;
+    font-family: "Varela Round", serif !important;
+    color: #33362b !important;
+    margin: 10% auto !important;
+    padding: 20px !important;
+    width: 50% !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+    text-align: left !important;
+    /* Make the modal content scrollable */
+    max-height: 100vh; 
+    overflow-y: auto;  /* Enable vertical scrolling if content exceeds max height */
+}
+
+
+/* Close button styling */
+.close {
+    color: #000000 !important;
+    font-size: 28px !important;
+    cursor: pointer !important;
+    
+  
+    right: 10px; /* Aligns it to the right */
+}
+
+
+/* Quantity Control */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-control button {
+    font-size: 20px;
+}
+
+input[type="number"] {
+    width: 40px;
+    text-align: center;
+}
+
+/* Button Styling */
+/* button {
+      padding-left: 6px;
+    padding-right: 6px;
+    background-color: #556d5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #283a2b;
+}
+ */
+.buttonlol {
+       align-items: center;
+    letter-spacing: 1px;
+    display: flex
+;
+    color: rgb(51, 54, 43);
+    opacity: 0.7;
+    background-color: rgb(207, 211, 196);
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 9px;
+    margin-top: 21px;
+    /* justify-self: center; */
+    outline: rgb(51, 54, 43) solid 1px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.buttonlol:hover {
+     background-color: #33362b ;
+  color: #cfd3c4;
+  transform: scale(1.03);
+}
+
+.buttonlol2{
+      align-items: center;
+    letter-spacing: 1px;
+    display: flex;
+  color: #cfd3c4;
+    
+    opacity: 0.7;
+  background-color: #33362b;
+    
+    cursor: pointer;
+    font-size: 18px;
+    /* margin-bottom: 9px; */
+    /* margin-top: 21px; */
+    justify-self: center;
+    outline: rgb(51, 54, 43) solid 1px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin-top: 10px;
+}
+
+.buttonlol2:hover {
+     background-color: rgb(207, 211, 196);
+  color: rgb(51, 54, 43);
+  transform: scale(1.03);
+}
+
+#orderSummary ul {
+  padding-inline-start: 37px;
+}
+/* Modal visibility */
+#paymentSection {
+    display: none;  /* Initially hidden */
+}
+
+
+
+.payment-info label {
+    grid-column: span 2;
+}
+
+.payment-info input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for Pay Now Button */
+
+
+/* When payment section should be shown */
+#paymentSection.show {
+    display: block; /* Make it visible when the 'show' class is added */
+}
+
+/* Payment Form Styling */
+#paymentSection h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #33362b;
+}
+
+#paymentSection .payment-info {
+    width: 70%;                 /* Set the width of the form */
+    margin: 0 auto;             /* Center the form */
+}
+
+#paymentSection .payment-info .group {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#paymentSection .payment-info .group:last-child {
+    margin-right: 0;            /* Remove the margin for the last element */
+}
+
+/* Ensure that the container clears the floats */
+#paymentSection .payment-info::after {
+    content: "";
+    display: table;
+    clear: both;                /* Clear floats to prevent layout issues */
+}
+
+
+/* Label and input styling */
+#paymentSection label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#paymentSection input
+ {
+
+    /* padding: 12px; */
+    border-radius: 7px;
+    /* border: 1.5px solid #84955e; */
+    font-size: 14px;
+    background-color: rgb(207, 211, 196);
+    color: #33362b;
+}
+
+/* Grid layout for side-by-side form fields */
+.payment-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Side-by-side input fields for credit card details */
+.payment-fields .half-width {
+    width: 100%;
+}
+
+/* Payment Method section */
+#paymentSection .payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.modal-content h4{
+font-size: 15px;
+}
+/* Extra Styles for Overall Aesthetic */
+
+
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.contact-details,
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.contact-details h3,
+.payment-method h3 {
+    font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+/* Style for the label */
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option input[type="checkbox"] {
+  margin-top: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+
+}
+
+.payment-option span {
+  margin-top: 10px;
+    font-size: 20px;
+    color: rgb(51, 54, 43);
+    cursor: pointer;
+  
+}
+.qty-input {
+    display: flex;
+    align-items: center;
+    background: rgba(51, 54, 43, 0.3);
+border-radius: 13px;
+    overflow: hidden;
+      position: fixed;
+}
+.qty-input-pasta {
+    display: flex;
+    align-items: center;
+    background: rgba(51, 54, 43, 0.3);
+border-radius: 13px;
+    overflow: hidden;
+      position: fixed;
+}
+.menu-section h3{
+  font-size: 30px;
+ 
+  
+  
+}
+.menu-section li{
+margin-bottom: 15px;
+       margin-top: 15px;
+  }
+.menu-section{
+  justify-items: center;
+       /*margin-left: -100px;
+    margin-right: -100px;*/
+}
+.qty-count {
+    background: transparent;
+    color: #33362b;
+    font-weight: bold;
+    font-size: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  border-radius: 9px;
+  font-family: "Varela Round", serif;
+ 
+}
+.qty-count:hover{
+  background: #33362b;
+  color: #a0a496;
+  font-family: "Varela Round", serif;
+}
+.qty-count--minus {
+    border-right: 1px solid rgba(51, 54, 43, 0.4);
+}
+
+.qty-count--add {
+    border-left: 1px solid rgba(51, 54, 43, 0.4);
+}
+
+input[type="number"].product-qty {
+    background: rgba(97, 101, 89, 0.5);
+    width: 3rem;
+    height: 2.5rem;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    font-family: "Varela Round", serif;
+  color: #33362b;
+}
+
+.modal-content h1{
+    font-size: 2em !important;
+      letter-spacing: 0px !important;
+    font-family: "Varela Round", serif !important;
+    color: #33362b !important;
+
+    text-align: left !important;
+
+
+}
+/* Hide the spinner buttons in number inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Standard appearance */
+}
+
+/* starter*/
+.ordering img{
+  width: 70%;
+  opacity: 0.95;
+}
+.ordering {
+  padding: 23px;
+  background-color: rgba(97, 101, 89, 0.5);
+  border-radius: 20px;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Keeps two columns */
+    gap: 15px;
+    width: 65%;
+   margin-top: 20px;
+}
+.ordering label{
+  font-size: 17px;
+  font-weight: bold;
+}
+.ordering h2{
+  font-size: 17px;
+  
+}
+
+/*pizza*/
+.ordering2 {
+    padding: 13px;
+    background-color: rgba(97, 101, 89, 0.5);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 15px; */
+    width: 65%;
+    height: 50%;
+    margin-top: 20px;
+}
+.ordering2 img {
+    width: 60%;
+     opacity: 0.8;
+    /* justify-self: center; */
+}
+.ordering3 img {
+    width: 50%;
+     opacity: 0.8;
+    /* justify-self: center; */
+}
+.ordering2 label{
+  font-size: 17px;
+  font-weight: bold;
+}
+.ordering2 h2{
+  font-size: 17px;
+  
+}
+
+/*pastas*/
+.ordering3 {
+    padding: 10px;
+    background-color: rgba(97, 101, 89, 0.5);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 15px; */
+    width: 65%;
+    height: 50%;
+    margin-top: 15px;
+}
+
+
+.ordering3 label{
+  font-size: 17px;
+  font-weight: bold;
+}
+.ordering3 h2{
+  font-size: 17px;
+  
+}
+/* Make image disappear and stack text and quantity input when screen width is 1134px or smaller */
+@media screen and (max-width: 1400px) {
+
+#paymentSection .payment-info {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+    .modal {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+#paymentSection .payment-info .group {
+    width: 60%;
+    float: left;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+}
+@media screen and (max-width: 1134px) {
+  
+  .modal-content{
+        max-height: 80vh;
+
+  }  
+
+
+    
+    .ordering2 {
+        grid-template-columns: 1fr; /* Stack all items in one column */
+    }
+
+    .ordering2 img {
+        display: none; /* Hide the image */
+    }
+    .ordering3 img {
+        display: none; /* Hide the image */
+    }
+    .ordering {
+        grid-template-columns: 1fr; /* Stack all items in one column */
+    }
+
+    .ordering img {
+        display: none; /* Hide the image */
+    }
+
+    .ordering_grid, .ordering_grid2 {
+        width: 100%; /* Make the text and quantity input take full width */
+    }
+/* 
+    .qty-input {
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: row; 
+        align-items: center;
+        background: rgba(51, 54, 43, 0.3);
+        border-radius: 13px;
+        overflow: hidden;
+        position: relative;
+        width: 100%; 
+    } */
+      .qty-input {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+        background: rgba(51, 54, 43, 0.3);
+        border-radius: 13px;
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+        height: 70%;
+    }
+    .qty-input-pasta {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+        background: rgba(51, 54, 43, 0.3);
+        border-radius: 13px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 40%;
+        margin-top: 25px;
+      margin-bottom: -20px !important;
+  }
+    /* This will make the text stack below the buttons and input */
+    .ordering_grid {
+        margin-bottom: 10px; /* Add space between text and qty input */
+    }
+
+    /* Adjust the buttons' spacing */
+    .qty-count {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
+       margin: 0 auto
+    }
+
+    .product-qty {
+        width: 3rem;
+        height: 2.5rem;
+        text-align: center;
+        margin-left: 10px;
+      /* Add space between input and buttons */
+    }
+
+
+    /* Optional: You can adjust the font size of the labels or texts to be responsive */
+    .ordering label,
+    .ordering h2 {
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
+}
+@media screen and (max-width: 880px){
+  
+  .ordering{
+/*     width: 50%; */
+    margin: 0 auto;
+       
+  }
+    .ordering2{
+/*     width: 50%; */
+    margin: 0 auto;
+       
+  }
+    .ordering3{
+/*     width: 50%; */
+    margin: 0 auto;
+       
+  }
+}
+
+@media screen and (max-width: 890px){
+  .menu-section h3{
+text-align: center !important;
+    margin: 0 auto;
+
+    
+  }
+    .menu-section ul{
+text-align: center !important;
+    margin: 0 auto;
+        font-size: 13px !important;
+      text-wrap: wrap;
+  }
+  
+  .menu-section li{
+            font-size: 13px !important
+}
+      .menu-section p{
+text-align: center !important;
+    margin: 0 auto;
+          font-size: 15px;
+  }
+  .buttonlol{
+  margin-top: 10px !important;
+margin: 0 auto;
+  }
+  .ordering{
+        margin-top: 10px !important;
+  }
+  .ordering2{
+        margin-top: 10px !important;
+  }
+  .ordering3{
+        margin-top: 10px !important;
+  }
+}
+@media screen and (max-width: 530px){
+  .ordering{
+/*         width: 47%; */
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center !important;
+        gap: 0px;
+        margin-top: 10px;
+  }
+  
+
+.ordering label{
+  font-size: 14px;
+  font-weight: bold;
+}
+.ordering h4{
+  font-size: 14px;
+  
+}
+  
+.ordering2{
+/*         width: 47%; */
+        margin: 0 auto;
+        padding: 0.2px;
+        text-align: center !important;
+        gap: 0px;
+        margin-top: 10px;
+  }
+  
+
+.ordering2 label{
+  font-size: 11px;
+  font-weight: bold;
+}
+.ordering2 h4{
+  font-size: 11px;
+  
+}
+  
+  .ordering3{
+/*         width: 47%; */
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center !important;
+        gap: 0px;
+        margin-top: 5px !important;
+     grid-template-columns: none;
+    
+  }
+  
+
+.ordering3 label{
+  font-size: 12px;
+  font-weight: bold;
+
+}
+.ordering3 h4{
+  font-size: 12px;
+  
+}
+  .modal-content {
+    background-color: #a0a496 !important;
+    font-family: "Varela Round", serif !important;
+    color: #33362b !important;
+    margin: 10% auto !important;
+    padding: 20px !important;
+    width: 70% !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+    text-align: left !important;
+    
+}
+  
+ 
+  .qty-count {
+    background: transparent;
+    color: #33362b;
+    font-weight: bold;
+    font-size: 20px;
+    width: 0.5rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+  border-radius: 9px;
+  font-family: "Varela Round", serif;
+    
+}
+  .ordering_grid2 {
+/*       width: 70%; */
+    justify-self: center;
+    align-items: center;
+  }
+
+}
+#thankYouPage {
+         background-color: rgb(207, 211, 196, 0.5);/* Light greenish background */ 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+  margin-bottom: 20px;
+}
+.back p{
+  font-size: 16px;
+      padding-top: 15px;
+    font-family: "Varela Round", serif;
+    color: #33362b;
+ 
+    line-height: 1.6;
+    opacity: 0.7;
+  
+}
+
+
+/* Radial progress circle */
+/* Ensure the .co2.grid container aligns the progress circle and text side by side */
+.co2.grid {
+  margin-top: 33px;
+  width: 100%;
+  clear: both; /* Clears the floats, ensuring the container wraps around both the circle and text */
+}
+
+/* Radial progress circle */
+.progress-radial {
+  float: left; /* Floats the progress circle to the left */
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 10px solid #d2e1cf;  /* Light gray border */
+  background-color: #fff;  /* White background for circle */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-right: 20px;  /* Adds space between the circle and text */
+}
+
+/* Applying conic gradient for progress bar */
+.progress-70 {
+  background: conic-gradient(#9faf88 0% 70%, #d2e1cf 70% 100%);
+}
+
+/* Inner circle with the percentage */
+.progress-radial b {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 700;
+  color: #3c5617;
+}
+
+/* Text next to the progress circle */
+.co2.grid p {
+  
+  font-size: 14px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  line-height: 1.6;
+  opacity: 0.7;
+ padding-top: 30px;
+ 
+    text-align: center;
+}
+
+/* Additional styling for better presentation */
+#co2Saved {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #0b3106;
+}
+
+#of-this {
+  margin-top: 15px;
+  color: #0b3106;
+  opacity: 0.9;
+}
+#proudText {
+  clear: both; /* Ensures the text appears below the progress grid */
+  font-size: 15px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  line-height: 1.6;
+  opacity: 0.9;
+  padding-top: 20px; /* Adds some space between the grid and this text */
+}
+/* Clear the floats after the content */
+ @media (max-width: 1150px) {
+  .co2.grid {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .progress-radial {
+    float: none;
+    margin: 0 auto 20px;
+    width: 130px;
+    height: 130px;
+  }
+
+  .co2.grid p {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+
+  #proudText {
+    text-align: center;
+    margin-top: -25px;
+  }
+
+  .back p {
+    text-align: center;
+  }
+
+  #thankYouPage h1 {
+    font-size: 27px;
+    text-align: center;
+  } 
+   #thankYouPage{
+     width: 100%;
+   }
+}

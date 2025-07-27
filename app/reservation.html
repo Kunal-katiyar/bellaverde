@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Verde</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="stylesheet" href="sustainability.css" />
+    <link rel="stylesheet" href="carryout.css" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/favicon.ico?v=1738549874466">
+    <script src="/navbar.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="mobile-navigation-bar" style="padding-top: 20px">
+      <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sustainability.html">Sustainability</a></li>
+          <li><a href="/reservation.html">Reservations</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+      <div class="background-image-res"></div>
+      <!-- seperate div for background image -->
+      <div class="hero-content">
+        <img
+          class="icon"
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+        />
+        <h1 class="web-name">Reservations</h1>
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <!-- Don't change the style on this one, for some reason this icon functions abnormally -->
+                <img
+                  src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0285.png?v=1737581395668"
+                  alt="Home Icon"
+                />
+              </a>
+            </li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/sustainability.html">Sustainability</a></li>
+            <li><a href="/reservation.html">Reservations</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="timing-section">
+      <p>Our Times</p>
+      <table class="timings">
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday-Thursday</td>
+          <td>1pm-10pm</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>1pm-11pm</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>8am-11:30pm</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>8am-9pm</td>
+        </tr>
+      </table>
+    </section>
+    <section class="reservations">
+      <div class="background-image-b"></div>
+      <div class="reservations-content">
+      <h1>Make a Reservation</h1>
+      <form action="#" id="r-form">
+        <div class="form-grid">
+          <div class="input-group">
+            <label for="name">NAME</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-group">
+            <label for="quantity"># OF PEOPLE</label>
+            <input type="number" id="quantity" required min="1" max="10">
+          </div>
+
+          <div class="input-group">
+            <label for="date">DATE</label>
+            <input type="date" id="date" required min="2025-05-22" value="2025-05-22"/>
+          </div>
+          <div class="input-group">
+            <label for="time">TIME</label>
+            <input type="time" id="time" required min="8:00" max="23:30" value="12:00"/>
+          </div>
+          <div class="input-group">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" required />
+          </div>
+        </div>
+        <p class="error-message" id="error-message">
+
+        </p>
+
+          <button class="arrow-button19" id="submitbtn">
+            Place My Reservation<span class="arrow"></span>
+          </button>
+        </form>
+      </div>
+    </section>
+    
+     <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            class="footer-img"
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          />
+          <h3>Bella Verde</h3>
+<!--           <p>© [Insert Copyright Here]</p> -->
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#reference-page">Reference Page</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" id="reserve">
+          <h4>Dine-In</h4>
+          <ul class="links">
+            <a href="/reservation.html" style="text-decoration: none">
+              <button class="arrow-button6">
+                Book a reservation<span class="arrow"></span>
+              </button>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col" id="carryout">
+          <div class="container">
+            <h4>Carry-Out Form</h4>
+            <a href="/order.html" style="text-decoration: none">
+              <button class="arrow-button6">Place an order<span class="arrow"></span></button>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col" id="newletter-col">
+          <h4>Newsletter</h4>
+          <p>
+            Stay connected with our plant-based kitchen! Subscribe to our
+            newsletter for fresh updates on seasonal vegan & vegetarian dishes,
+            and behind-the-scenes looks at our farm-to-table process.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div id="r-modal" class="r-modal">
+      <div class="modal-content-res">
+        <span class="close-res" id="r-close">&times;</span>
+        <h1>Thanks for placing your reservation!</h1>
+        <p>Your reservation details are:</p>
+        <ul>
+          <li><p id="name-d"></p></li>
+          <li><p id="people-d"></p></li>
+          <li><p id="date-d"></p></li>
+          <li><p id="time-d"></p></li>
+          <li><p id="phone-d"></p></li>
+          <li><p id="r-number"></p></li>
+        </ul>
+        <p>Take a look at our <a href="/menu.html" id="menu-link">Menu</a> to learn about our delicious dining options!</p>
+      </div>
+    </div>
+    
+  </body>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    function formatTimeAmerican(time) {
+      const inputDate = new Date(`1970-01-01T${time}:00`);
+      const options = {
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true,
+      };
+      return new Intl.DateTimeFormat('en-US', options).format(inputDate);
+    }
+    
+    function isNumeric(str) {
+      if (typeof str != "string") return false // we only process strings!  
+      return !isNaN(str) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+             !isNaN(parseFloat(str)) // ...and ensure strings of whitespace fail
+    }
+      // Get the modal
+    var modal = document.getElementById("r-modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("submitbtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementById("r-close");
+    
+    var numpeople = document.getElementById("quantity");
+    
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const numPeople = document.getElementById("quantity").value.trim();
+      const date = document.getElementById("date").value.trim();
+      const time = document.getElementById("time").value.trim();
+      const phone = document.getElementById("phone-number").value.trim();
+      
+      let validationMessage = "";
+      let valid = true;
+      if (name === "") {
+        valid = false;
+        validationMessage += "Please enter the name for the reservation.\n";
+      }
+      if (numPeople === "" || !isNumeric(numPeople) || +numPeople > 20) {
+        valid = false;
+        validationMessage += "Please enter a valid number of people attending (less than 20).\n";
+      } 
+      if (!/^\d{10}$/.test(phone)) {
+        valid = false;
+        validationMessage += "Please enter a valid 10-digit phone number.\n";
+      }
+      const startTime = "08:00";
+      const endTime = "23:30";
+      const startDate = new Date(`1970-01-01T${startTime}:00`);
+      const endDate = new Date(`1970-01-01T${endTime}:00`);
+      const inputDate = new Date(`1970-01-01T${time}:00`);
+      if (!(inputDate >= startDate && inputDate <= endDate)) {
+        valid = false;
+        validationMessage += "Please enter a time between 8:00 AM and 11:30 PM.\n"
+      }
+      const errorMessage = document.getElementById("error-message");
+      if (!valid) {
+        errorMessage.style.display = "block";
+        errorMessage.innerText = validationMessage;
+        return;
+      }
+      return valid;
+    }
+    
+    function processForm() {
+      if (validateForm()) {
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.style.display = "none";
+        modal.style.display = "block";
+        document.getElementById("name-d").innerHTML = "Name: <b>"+document.getElementById("name").value + "</b>";
+        document.getElementById("people-d").innerHTML = "# of People: <b>"+document.getElementById("quantity").value + "</b>";
+        document.getElementById("date-d").innerHTML = "Date: <b>"+document.getElementById("date").value + "</b>";
+        document.getElementById("time-d").innerHTML = "Time: <b>"+formatTimeAmerican(document.getElementById("time").value).toString() + "</b>";
+        document.getElementById("phone-d").innerHTML = "Phone Number: <b>"+document.getElementById("phone-number").value + "</b>";
+        document.getElementById("r-number").innerHTML = "Reservation Number: <b>"+(Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000)+"</b>";
+        document.getElementById("r-form").reset();
+      }
+    }
+    $("#submitbtn").click(function() {
+      processForm();
+    })
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  
+  </script>
+
+</html>

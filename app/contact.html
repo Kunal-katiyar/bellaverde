@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Verde</title>
+    <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="sustainability.css" />  
+    <link rel="stylesheet" href="carryout.css" /> 
+    <link rel="stylesheet" href="contact.css" />
+        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/favicon.ico?v=1738549874466">
+    <script src="/script.js" defer></script>
+    <script src="/navbar.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="mobile-navigation-bar" style="padding-top: 20px">
+      <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sustainability.html">Sustainability</a></li>
+          <li><a href="/reservation.html">Reservations</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+      <div class="background-image-a"></div>
+      <!-- seperate div for background image -->
+      <div class="hero-content">
+        <img
+          class="icon"
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+        />
+        <h1 class="web-name">Contact Us</h1>
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <!-- Don't change the style on this one, for some reason this icon functions abnormally -->
+                <img
+                  src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0285.png?v=1737581395668"
+                  alt="Home Icon"
+                />
+              </a>
+            </li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/sustainability.html">Sustainability</a></li>
+            <li><a href="/reservation.html">Reservations</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact" id="contact-loc">
+        <div class="background-image-b"></div>
+        <div class="image-contact">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-02-02_at_12.28.12_PM-removebg-preview%20(1).png?v=1738521006334"
+            alt="Sustainable Dining Image"
+            class="slide-in"
+          />
+        </div>
+        <div class="form-container">
+          <h1>Contact Us</h1>
+          <form>
+            <div class="form-grid">
+              <div class="input-group">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" required />
+              </div>
+              <div class="input-group">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" required />
+              </div>
+              <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="input-group">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="tel" id="phone-number" required />
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="message">MESSAGE</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <a href="#" style="text-decoration: none">
+              <button class="arrow-button19">
+                Submit<span class="arrow"></span>
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Info Section -->
+
+      <div class="outside">
+        
+      <div class="info-section" >
+        <div class="info-box">
+          <div class="grid-container">
+            <h3><i class="fas fa-phone"></i> (+123) 456 7890</h3>
+          </div>
+          <p>
+            Call our number to ask us a question or place a reservation/order.
+          </p>
+        </div>
+        <div class="info-box">
+        <div class="grid-container">
+          <h3 id="emailing"> <i class="fas fa-envelope"></i>contact@bellaverde.com</h3>
+          </div>
+          <p>
+            Email us for business inquires or general questions.
+          </p>
+        </div>
+        <div class="info-box">
+        <div class="grid-container" id="location">
+          
+          <h3> <i class="fas fa-house"></i> 111 Webmaster Drive, TSA</h3>
+          </div>
+          <p>
+            Conveniently located near public transport, we make it easy for you
+            to visit.
+          </p>
+        </div>
+        
+      </div>
+        
+              </div>
+            <section class="order-section">
+        <div class="order">
+          <h3>Order Online</h3>
+          <p>Fresh, handcrafted, and ready for you!</p>
+          <a href="/order.html">
+          <button class="order-button" onclick="openOrderForm()">
+            Place an order <span class="arrow"></span>
+          </button>
+</a>
+
+        </div>
+      </section>
+
+      
+      
+        <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            class="footer-img"
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          />
+          <h3>Bella Verde</h3>
+<!--           <p>© [Insert Copyright Here]</p> -->
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#reference-page">Reference Page</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" id="reserve">
+          <h4>Dine-In</h4>
+          <ul class="links">
+            <a href="/reservation.html" style="text-decoration: none">
+              <button class="arrow-button6">
+                Book a reservation<span class="arrow"></span>
+              </button>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col" id="carryout">
+          <div class="container">
+            <h4>Carry-Out Form</h4>
+            <a href="/order.html" style="text-decoration: none">
+              <button class="arrow-button6">Place an order<span class="arrow"></span></button>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col" id="newletter-col">
+          <h4>Newsletter</h4>
+          <p>
+            Stay connected with our plant-based kitchen! Subscribe to our
+            newsletter for fresh updates on seasonal vegan & vegetarian dishes,
+            and behind-the-scenes looks at our farm-to-table process.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+      
+      <!-- carryout -->
+      <!-- carry out order form -->
+      </body>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".image-contact img");
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Add event listener for scroll
+      function handleScroll() {
+        images.forEach((img) => {
+          if (isInViewport(img) && !img.classList.contains("animate")) {
+            img.classList.add("animate"); // Add the animation class
+          }
+        });
+
+        // Check if all images have been animated
+        const allAnimated = Array.from(images).every((img) =>
+          img.classList.contains("animate")
+        );
+
+        // If all images are animated, remove the scroll listener
+        if (allAnimated) {
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll); // Listen for scroll events
+      handleScroll(); // Trigger on load in case some images are already in the viewport
+    });
+  </script>
+</html>

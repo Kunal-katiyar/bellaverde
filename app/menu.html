@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Verde</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <script src="/script.js" defer></script>
+    <script src="/navbar.js" defer></script>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="sustainability.css" />
+    <link rel="stylesheet" href="carryout.css" />
+        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/favicon.ico?v=1738549874466">
+
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <!-- Header Section -->
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="mobile-navigation-bar" style="padding-top: 20px">
+      <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/sustainability.html">Sustainability</a></li>
+          <li><a href="/reservation.html">Reservations</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+      
+            <video autoplay muted loop class="background-video">
+        <source src="https://cdn.pixabay.com/video/2024/01/18/197205-904265109_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <div class="background-image-c"></div> 
+      <div class="hero-content">
+        
+        <img
+          class="icon"
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          alt="Logo"
+        />
+        <h1 class="web-name">Our Menu</h1>
+
+
+        
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <img
+                  src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0285.png?v=1737581395668"
+                  alt="Home Icon"
+                />
+              </a>
+            </li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/sustainability.html">Sustainability</a></li>
+            <li><a href="/reservation.html">Reservations</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="bottom-half">
+      <section class="menu">
+        <div id="menu-background"></div>
+
+        <div class="menu-container">
+          <p style="text-align: center;">Click on our ingredients to see where we source them from!</p>
+        <p class = "vegan" style="text-align: center;">
+           <i class="fa-solid fa-leaf" style="color: #84955e;"></i> Vegan – 100% plant-based, with no animal products.
+          </p>
+          
+          <tab-container>
+            <!-- Toggle Controls -->
+            <!--             <div class="toggle"> -->
+            <input type="radio" id="tabStarters" name="tabs" value="1" checked/>
+            <label for="tabStarters">Starters</label>
+
+            <input type="radio" id="tabPizzas" name="tabs" value="2" />
+            <label for="tabPizzas">Pizzas</label>
+
+            <input type="radio" id="tabEntrees" name="tabs" value="3" />
+            <label for="tabEntrees">Entrees</label>
+
+            <input type="radio" id="tabPastas" name="tabs" value="4" />
+            <label for="tabPastas">Pastas</label>
+            
+            <!--<input type="radio" id="tabSauces" name="tabs" value="5" />
+            <label for="tabSauces">Sauces</label>-->
+            <!--             </div> -->
+
+            <!-- Tab Contents -->
+            <tab-content>
+              <div id="startersContent">
+                <div class="menu-content-wrapper">
+                  <h1 class="menu-title">Starters</h1>
+                  <div class="menu-item-1">
+                    <div class="menu-text" id="startertext1">
+                      <h2 id="medit">Mediterranean Mezze Platter <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >House-made hummus</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >baba ghanoush</span
+                        >,
+                        <span class="ingredient" data-source="Greece"
+                          >marinated olives</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >roasted peppers</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >warm pita bread</span
+                        >
+                        (Gluten-free option available with crackers) - <b>$14</b>
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-01-20%20at%207.18.16%20PM.png?v=1737422611568"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                  </div>
+                  <div class="menu-item">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_8.44.40_PM-removebg-preview.png?v=1737427499488"
+                      alt="Tomato Burrata"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="startertext2">
+                      <h2>Tomato Burrata</h2>
+                      <p>
+                        Creamy burrata with
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >heirloom tomatoes</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >, a drizzle of
+                        <span class="ingredient" data-source="Local Market"
+                          >balsamic reduction</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Made at our restaurant bi-weekly"
+                          >olive oil</span
+                        >. (Gluten-free available upon request) - $12
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-item-2">
+                    <div class="menu-text" id="startertext3">
+                      <h2>Roasted Beet Carpaccio <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <b>(CHEF'S FAVORITE)</b> Thinly sliced
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >beets</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >arugula</span
+                        >, toasted
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >walnuts</span
+                        >, and creamy
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan feta</span
+                        >, artfully arranged and drizzled with a zesty
+                        <span
+                          class="ingredient"
+                          data-source="Made at our restaurant from ingredients from various sustainable sources"
+                          >citrus vinaigrette</span
+                        >, offering a perfect balance of earthy, nutty, and
+                        tangy flavors. - $14
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_8.46.21_PM-removebg-preview.png?v=1737427594882"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </tab-content>
+
+            <tab-content>
+              <div id="pizzaContent">
+                <div class="menu-content-wrapper">
+                  <h1 class="menu-title">Pizzas</h1>
+                  <p class="menu-info">
+                    Handcrafted
+                    <span
+                      class="ingredient"
+                      data-source="Local Organic Farmer's Market"
+                      >sourdough</span
+                    >
+                    pizzas fermented for 48 hours and baked in an imported oven
+                    from Genoa, Italy at 400°C. Gluten-free dough available for
+                    $4 more.
+                  </p>
+                  <div class="menu-item-1">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.44.30_PM-removebg-preview.png?v=1737431090496"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="pizzatext1">
+                      <h2>Hot Honey Pizza</h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >Vegan mozzarella</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Made in-house daily from sustainably sourced ingredients:<br>Chilis- Local Organic Farmer's Market<br>Honey- Local Ethical Bee Farm"
+                          >chili-infused hot honey</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >. - $15
+                      </p>
+                      <h2>Margherita Pizza <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >Classic tomato sauce</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan mozzarella</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >. - $14
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-text" id="pizzatext2">
+                      <h2>Wild Mushroom Truffle Pizza <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        Creamy
+                        <span
+                          class="ingredient"
+                          data-source="Large Organic Farmer's Market"
+                          >truffle base</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >wild mushrooms</span
+                        >, caramelized
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >onions</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan Parmesan cheese</span
+                        >. - $17
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.14_PM-removebg-preview.png?v=1737430677826"
+                      alt="Tomato Burrata"
+                      class="menu-image"
+                    />
+                  </div>
+                  <div class="menu-item-2">
+                    <div class="menu-text" id="pizzatext3">
+                      <h2>Mediterranean Delight Pizza</h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >Tomato base</span
+                        >, roasted
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >red peppers</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Originally from Greece"
+                          >Kalamata olives</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >artichokes</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >red onions</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan feta</span
+                        >, and a sprinkle of
+                        <span
+                          class="ingredient"
+                          data-source="Grown fresh at our restaurant using sustainable practices"
+                          >oregano</span
+                        >. - $16
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.19_PM-removebg-preview.png?v=1737430680546"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </tab-content>
+            <tab-content>
+              <div id="entreesContent">
+                <div class="menu-content-wrapper">
+                  <h1 class="menu-title">Entrees</h1>
+
+                  <div class="menu-item-1">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.39.53_PM-removebg-preview.png?v=1737924042925"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="entreestext1">
+                      <h2>Eggplant Parmesan</h2>
+                      <p>
+                        Layers of
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >eggplant</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Tomatoes from Local Organic Farms"
+                          >marinara</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan mozzarella</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >, baked to perfection. (Gluten-free option available) - $18
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-text" id="entreestext2">
+                      <h2>Stuffed Bell Peppers <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >Sweet peppers</span
+                        >
+                        filled with spiced
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >lentils</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >tomatoes</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >rice</span
+                        >, served with
+                        <span
+                          class="ingredient"
+                          data-source="Made in-house daily from sustainably sourced ingredients:
+                                                              <br>Chilies: Local Organic Farmer's Market
+                                                              <br>Tomatoes: Local Organic Farms
+                                                              <br>Garlic/spices: Sustainable Farming Cooperative"
+                          >harissa sauce</span
+                        >. (Gluten-free) - $17
+                      </p>
+                      <h2>Mediterranean Veggie Bowl <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        Grilled
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >zucchini</span
+                        >, roasted
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >eggplant</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >chickpeas</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Bought from the Local Market directly"
+                          >tahini sauce</span
+                        >
+                        served over herbed quinoa. - $16
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.41.50_PM-removebg-preview.png?v=1737924137007"
+                      alt="Tomato Burrata"
+                      class="menu-image"
+                    />
+                  </div>
+                  <div class="menu-item-2">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.11.13_PM-removebg-preview.png?v=1737925891693"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="entreestext3">
+                      <h2>Falafel Platter <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        Crispy
+                        <span
+                          class="ingredient"
+                          data-source="Bought from the Local Market directly"
+                          >falafel</span
+                        >
+                        with pickled
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market/Sustainable Farming Cooperative"
+                          >vegetables</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Bought from the Local Market directly"
+                          >tahini</span
+                        >, and a fresh
+                        <span
+                          class="ingredient"
+                          data-source="Prepared in-house:
+                          <br>Vegetables: Local Organic Farmer's Market/Sustainable Farming Cooperative
+                          <br>Spices: Sustainable Farming Cooperative
+                          <br>Olive Oil: Made at our restaurant bi-weekly"
+                          >tabbouleh salad</span
+                        >. - $15
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </tab-content>
+
+            <tab-content>
+              <div id="pastasContent">
+                <div class="menu-content-wrapper">
+                  <h1 class="menu-title">Pastas</h1>
+                  <p class="menu-info">
+                    Fresh
+                    <span
+                      class="ingredient"
+                      data-source="Grains from the Local Organic Farmer's Market"
+                      >pasta</span
+                    >
+                    made in-house daily, cooked al dente for perfect texture.
+                    Gluten-free pasta available for $4 more.
+                  </p>
+                  <div class="menu-item-1">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.03.29_PM-removebg-preview.png?v=1737925459752"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="pastastext1">
+                      <h2 id="top-text">Pesto alla Genovese <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Made in-house daily from sustainably sourced ingredients:
+                                                              <br>Basil/Garlic/Spices: Sustainable Farming Cooperative
+                                                              <br>Olive oil: Made at our restaurant bi-weekly"
+                          >Fresh basil pesto</span
+                        >
+                        with
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >pine nuts</span
+                        >
+                        and
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan Parmesan cheese</span
+                        >, tossed with
+                        <span
+                          class="ingredient"
+                          data-source="Grains from the Local Organic Farmer's Market"
+                          >tagliatelle</span
+                        >. – $18
+                      </p>
+                      <h2>Eggplant Lasagna <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        Layers of roasted
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >eggplant</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan ricotta</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Tomatoes from Local Organic Farms"
+                          >marinara</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Made in-house daily from sustainably sourced ingredients:
+                                                              <br>Vegan milk and butter: Local Vegan Market
+                                                              <br>Flour: Local Organic Farmer's Market"
+                          >béchamel sauce</span
+                        >. – $20
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu-text" id="pastastext2">
+                      <h2>Lumache alla Vodka</h2>
+                      <p>
+                        Shell pasta in a creamy
+                        <span
+                          class="ingredient"
+                          data-source="Bought from the Local Market directly"
+                          >vodka sauce</span
+                        >, topped with
+                        <span
+                          class="ingredient"
+                          data-source="Grown at our restuarant using sustainable practices/Sustainable Farming Cooperative"
+                          >fresh herbs</span
+                        >. - $17
+                      </p>
+                      <h2>Cacio e Pepe</h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >Vegan Parmesan</span
+                        >
+                        and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >cracked black pepper</span
+                        >, tossed with
+                        <span
+                          class="ingredient"
+                          data-source="Grains from the Local Organic Farmer's Market"
+                          >spaghetti</span
+                        >. – $19
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.57.12_PM-removebg-preview.png?v=1737928686511"
+                      alt="Tomato Burrata"
+                      class="menu-image"
+                    />
+                  </div>
+                  <div class="menu-item-2">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-02-01_at_9.50.59_PM-removebg-preview.png?v=1738468422265"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="pastastext3">
+                      <h2>Rigatoni alla Norma <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        Tomato-braised
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >eggplant</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan ricotta</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >
+                        over
+                        <span
+                          class="ingredient"
+                          data-source="Grains from the Local Organic Farmer's Market"
+                          >rigatoni</span
+                        >. – $17
+                      </p>
+                      <h2>Campanelle al Tartufo</h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Larger Organic Farmer's Market"
+                          >Truffle</span
+                        >-infused cream sauce with sautéed
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >mushrooms</span
+                        >
+                        and
+                        <span
+                          class="ingredient"
+                          data-source="Grains from the Local Organic Farmer's Market"
+                          >campanelle pasta</span
+                        >. – $22
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </tab-content>
+            
+            <tab-content>
+              <div id="saucesContentnotInUse">
+                <div class="menu-content-wrapper">
+                  <h1 class="menu-title">Sauces</h1>
+                  <div class="menu-item-1">
+                    <div class="menu-text" id="startertext1">
+                      <h2 id="medit">Mediterranean Mezze Platter <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >House-made hummus</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >baba ghanoush</span
+                        >,
+                        <span class="ingredient" data-source="Greece"
+                          >marinated olives</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >roasted peppers</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >warm pita bread</span
+                        >
+                        (Gluten-free option available with crackers) - <b>$14</b>
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-01-20%20at%207.18.16%20PM.png?v=1737422611568"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                  </div>
+                  <div class="menu-item">
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_8.44.40_PM-removebg-preview.png?v=1737427499488"
+                      alt="Tomato Burrata"
+                      class="menu-image"
+                    />
+                    <div class="menu-text" id="startertext2">
+                      <h2>Tomato Burrata</h2>
+                      <p>
+                        Creamy burrata with
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farms"
+                          >heirloom tomatoes</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >fresh basil</span
+                        >, a drizzle of
+                        <span class="ingredient" data-source="Local Market"
+                          >balsamic reduction</span
+                        >, and
+                        <span
+                          class="ingredient"
+                          data-source="Made at our restaurant bi-weekly"
+                          >olive oil</span
+                        >. (Gluten-free available upon request) - $12
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-item-2">
+                    <div class="menu-text" id="startertext3">
+                      <h2>Roasted Beet Carpaccio <i class="fa-solid fa-leaf" style="color: #84955e;"></i></h2>
+                      <p>
+                        <b>(CHEF'S FAVORITE)</b> Thinly sliced
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farm"
+                          >beets</span
+                        >,
+                        <span
+                          class="ingredient"
+                          data-source="Local Organic Farmer's Market"
+                          >arugula</span
+                        >, toasted
+                        <span
+                          class="ingredient"
+                          data-source="Sustainable Farming Cooperative"
+                          >walnuts</span
+                        >, and creamy
+                        <span
+                          class="ingredient"
+                          data-source="Local Vegan Market"
+                          >vegan feta</span
+                        >, artfully arranged and drizzled with a zesty
+                        <span
+                          class="ingredient"
+                          data-source="Made at our restaurant from ingredients from various sustainable sources"
+                          >citrus vinaigrette</span
+                        >, offering a perfect balance of earthy, nutty, and
+                        tangy flavors. - $14
+                      </p>
+                    </div>
+                    <img
+                      src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_8.46.21_PM-removebg-preview.png?v=1737427594882"
+                      alt="Roasted Beet Carpaccio"
+                      class="menu-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </tab-content>
+          </tab-container>
+        </div>
+      </section>
+    </div>
+
+    <!--     <div class="res_img">
+      <img
+        src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-01-26%20at%205.19.22%20PM.png?v=1737933567827"
+      />
+    </div> -->
+  </body>
+
+   <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            class="footer-img"
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          />
+          <h3>Bella Verde</h3>
+<!--           <p>© [Insert Copyright Here]</p> -->
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#reference-page">Reference Page</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" id="reserve">
+          <h4>Dine-In</h4>
+          <ul class="links">
+            <a href="/reservation.html" style="text-decoration: none">
+              <button class="arrow-button6">
+                Book a reservation<span class="arrow"></span>
+              </button>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col" id="carryout">
+          <div class="container">
+            <h4>Carry-Out Form</h4>
+            <a href="/order.html" style="text-decoration: none">
+              <button class="arrow-button6">Place an order<span class="arrow"></span></button>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col" id="newletter-col">
+          <h4>Newsletter</h4>
+          <p>
+            Stay connected with our plant-based kitchen! Subscribe to our
+            newsletter for fresh updates on seasonal vegan & vegetarian dishes,
+            and behind-the-scenes looks at our farm-to-table process.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".ingredient").forEach((item) => {
+        item.addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevent event from bubbling up
+          let existingBlurb = document.querySelector(".info-blurb");
+          if (existingBlurb) {
+            existingBlurb.remove();
+          }
+          let blurb = document.createElement("div");
+          blurb.classList.add("info-blurb");
+          blurb.innerHTML = "Source: " + this.getAttribute("data-source");
+          this.appendChild(blurb);
+          blurb.style.display = "block";
+
+          document.addEventListener("click", function closeBlurb(e) {
+            if (!item.contains(e.target)) {
+              blurb.remove();
+              document.removeEventListener("click", closeBlurb);
+            }
+          });
+        });
+      });
+    });
+    $(document).ready(function () {
+      if (window.location.hash) {
+        //alert(window.location.hash);
+        document.getElementById(
+          window.location.hash.substring(1)
+        ).checked = true;
+      } else {
+        //alert("Hash(#) component doesn't exist");
+      }
+    });
+  </script>
+</html>

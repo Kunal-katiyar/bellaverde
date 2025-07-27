@@ -1,0 +1,971 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.hero-content .menu-name {
+  font-family: "Pacifico", serif;
+  font-size: 117px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color:  #8c948f;
+  text-align: center
+}
+
+
+.hero-section .background-image-c {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+/*   background-image: url("https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1834.jpeg?v=1737913319796"); */
+ background-color: rgba(0,0,0,0.25);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+/*   animation: zoom-in 5s ease-in-out forwards; */
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Ensure video stays in the background */
+  opacity: 1;
+}
+#menu-background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1839.jpg?v=1737940010839");
+  background-color: #082208;
+  background-size: cover; /* Makes sure the whole image is visible */
+  background-position: center center; /* Keeps the image centered */
+/*   background-attachment: fixed; Optional: Keeps the background fixed during scroll */
+  z-index: -2;
+  filter: brightness(75%);
+}
+
+.menu-content-wrapper {
+    background: rgba(246, 246, 246, 0.15);
+    border-radius: 40px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    color: white;
+  padding-top: 2px;
+  padding-bottom: 30px;
+}
+
+
+/* Tab Container */
+tab-container {
+  display: flex; /* Change to flex for centering */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Wrap items if necessary */
+  gap: 10px; /* Space between tabs */
+  margin: 0 auto; /* Center container */
+  width: 100%;
+}
+
+.menu-container label {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+   tab-container {
+    display: flex !important;
+    gap: 20px !important;
+    padding: 0 !important;
+  }
+
+  tab-container > * {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important; /* Ensures no extra height */
+  }
+
+  .menu-container label {
+    margin-top: 0 !important;
+    padding: 9px 90px !important;
+  }
+
+ 
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+.menu-container label {
+  font-family: "Varela Round", serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 8px 90px; /* Adjust padding for balanced spacing */
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgb(120, 135, 95);
+  color: white;
+  color: #33362b;
+  display: inline-flex; /* Aligns content inside the label */
+  justify-content: center; /* Centers text inside the label */
+  align-items: center; /* Centers text inside the label */
+  margin-bottom: 40px; /* Space between labels */
+  margin-top: 50px;
+}
+.menu-container label:hover {
+  transition: transform 0.5s ease-in-out;
+  background-color: #33362b;
+  transform: scale(1.05);
+  color: #7f8376;
+}
+input:checked + label {
+  background-color: #33362b;
+  opacity: 1;
+  color: #7f8376;
+}
+
+
+/* General Styles */
+.menu-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.menu-container p {
+  color:  #cfd3c4;
+  font-family: "Raleway", serif;
+  font-size: 23px;
+/*   text-align: center; */
+  font-style: italic;
+  padding: 10px;
+}
+
+.menu-container .vegan {
+  color:  #cfd3c4;
+  font-family: "Raleway", serif;
+  font-size: 20px;
+/*   text-align: center; */
+  font-style: normal !important;
+  padding: 10px;
+}
+/* Make the title more flexible */
+.menu-title {
+    font-family: "Pacifico", serif;
+    color: #cfd3c4;
+    font-size: 85px;
+    margin-left: 50px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Improve text alignment and sizing */
+.menu-info, .menu-text p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: clamp(16px, 2vw, 23px);
+  line-height: 1.6;
+  margin: auto;
+/*   max-width: 90%; */
+}
+
+/* Use Flexbox for better responsiveness */
+.menu-item, .menu-item-1, .menu-item-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.menu-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.menu-image {
+  flex: 1;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+#medit {
+font-size: 34.9px !important;
+}
+/* Adjust Layout for Small Screens */
+@media (max-width: 768px) {
+  .menu-item, .menu-item-1, .menu-item-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-text {
+    width: 100%;
+  }
+
+  .menu-image {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Adjust for Extra Small Screens */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 60px;
+  }
+
+  .menu-info, .menu-text p {
+    font-size: 16px;
+  }
+
+  .menu-image {
+    width: 90%;
+  }
+}
+tab-content {
+  display: none;
+  grid-column: 1 / -1;
+  padding-left: 20px;
+  padding-bottom: 70px;
+}
+
+input#tabStarters:checked ~ tab-content:nth-of-type(1),
+input#tabPizzas:checked ~ tab-content:nth-of-type(2),
+input#tabEntrees:checked ~ tab-content:nth-of-type(3),
+input#tabPastas:checked ~ tab-content:nth-of-type(4),
+input#tabSauces:checked ~ tab-content:nth-of-type(5){
+  display: block;
+}
+
+
+.res_img img{
+     background-size: cover; /* Ensures the whole image is visible */
+ background-repeat: no-repeat;
+  z-index: -1;
+  background-size: 100% auto;
+  width: 100%;
+
+}
+
+
+.menu-info {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 23px;
+  line-height: 1.6;
+  margin-left: 210px;
+  margin-top: 10px;
+  
+  width: 70%;
+  text-align: center;
+}
+/* Add these styles to specifically target menu items inside #startersContent */
+#startersContent .menu-item {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px; /* Space between the text and the image */
+
+  margin-bottom: 20px; /* Spacing below each menu item */
+  position: relative; /* Prevents affecting other elements */
+}
+/* image on right text on left*/
+#startersContent .menu-item-1 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px; /* Space between the text and the image */
+  align-items: center; /* Vertically aligns text and image */
+  margin-bottom: 20px; /* Spacing below each menu item */
+  position: relative;
+}
+
+#startersContent .menu-item-2 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px; /* Space between the text and the image */
+  align-items: center; /* Vertically aligns text and image */
+  margin-bottom: 20px; /* Spacing below each menu item */
+  position: relative; /* Prevents affecting other elements */
+}
+#startertext1 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px;
+  line-height: 1.6;
+    margin: auto;
+    width: 75%;
+
+
+}
+#startertext1 p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+  width: 75%;
+}
+#startertext2 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px;
+  line-height: 1.6;
+/*   margin-left: 190px; */
+
+    text-align: right;
+/*     width: 70%; */
+
+
+}
+
+#startertext2{
+  width: 70%;
+margin: auto;
+ 
+}
+#startertext2 p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+/*   margin-left: 100px; */
+/*   width: 70%; */
+  text-align: right;
+}
+#startertext3 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px;
+  line-height: 1.6;
+   margin: auto;
+  width: 70%;
+
+
+  
+}
+#startertext3 p {
+  
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+/*   margin-left: 150px; */
+  margin: auto;
+  width: 70%;
+}
+#startersContent .menu-item-1 img {
+  width: 90%; /* Image fills the grid container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounds image corners */
+  object-fit: cover; /* Ensures proper cropping */
+  display: block; /* Makes sure the image behaves as a block-level element */
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+#startersContent .menu-item-2 img {
+  width: 80%; /* Image fills the grid container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounds image corners */
+  object-fit: cover; /* Ensures proper cropping */
+  display: block; /* Makes sure the image behaves as a block-level element */
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+#startersContent .menu-item img {
+  width: 100%; /* Image fills the grid container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Rounds image corners */
+  object-fit: cover; /* Ensures proper cropping */
+  display: block;
+  margin-left: 40px;/* Makes sure the image behaves as a block-level element */
+}
+
+/*PIZZAS */
+/* ✅ Ensure Pizza Content Matches Starters Content Layout */
+
+#pizzaContent .menu-item {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Text on the left, image on the right */
+     margin-top: -100px;
+  margin-bottom: 20px;
+  position: relative; /* Prevents affecting other elements */
+}
+
+/* ✅ Image on right, text on left */
+#pizzaContent .menu-item-1 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px;
+  align-items: center; /* Aligns text & image */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* ✅ Image on left, text on right */
+#pizzaContent .menu-item-2 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* ✅ Ensure Consistent Text Styling */
+#pizzatext1 h2, #pizzatext2 h2, #pizzatext3 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px; /* Match starter text size */
+  line-height: 1.6;
+  margin: auto;
+ 
+  
+}
+
+#pizzatext1 p, #pizzatext2 p, #pizzatext3 p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+  
+  margin: auto;
+  
+}
+
+
+#pizzatext1 p{
+  width: 90%;
+  margin-left: revert-layer;
+  margin-bottom: 30px;
+}
+#pizzatext3 h2, #pizzatext3 p{
+  width: 83%;
+}
+/* ✅ Text Alignment */
+#pizzatext2 h2, #pizzatext2 p {
+  width: 83%;
+}
+
+
+/* ✅ Image Adjustments to Match Starter Content */
+#pizzaContent .menu-item img {
+  width: 150%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  
+}
+
+#pizzaContent .menu-item-1 img {
+/*   width: 70%; */
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+  margin: 0 auto;
+  
+
+}
+
+#pizzaContent .menu-item-2 img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+ 
+  
+}
+
+/* ✅ Responsive Stacking Below 888px */
+@media (max-width: 1352px) {
+  #pizzaContent .menu-item,
+  #pizzaContent .menu-item-1,
+  #pizzaContent .menu-item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+
+    }
+      .menu-info{
+      width: 80%;
+      margin: auto;
+  }
+
+  #pizzatext1, #pizzatext2, #pizzatext3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  #pizzaContent .menu-item img {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+/* ✅ Further Adjustments for Small Screens */
+@media (max-width: 480px) {
+  #pizzatext1 p, #pizzatext2 p, #pizzatext3 p {
+    font-size: 16px;
+  }
+  .menu-info{
+      width: 80%;
+      margin: auto;
+    }
+  #pizzaContent .menu-item img {
+    width: 90%;
+  }
+}
+
+/*entrees content*/
+/* ✅ Ensure Entrees Content Matches Pizza Content Layout */
+#entreesContent .menu-item {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Text on the left, image on the right */
+
+  margin-bottom: 20px;
+  position: relative; /* Prevents affecting other elements */
+}
+
+/* ✅ Image on right, text on left */
+#entreesContent .menu-item-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px;
+  align-items: center; /* Aligns text & image */
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* ✅ Image on left, text on right */
+#entreesContent .menu-item-2 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* ✅ Ensure Consistent Text Styling */
+#entreestext1 h2, #entreestext2 h2, #entreestext3 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px; /* Match starter text size */
+  line-height: 1.6;
+  margin: auto;
+}
+
+#entreestext1 p, #entreestext2 p, #entreestext3 p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: auto;
+}
+
+/* ✅ Adjust paragraph width and margin */
+#entreestext1 p {
+  width: 90%;
+  margin-left: revert-layer;
+  margin-bottom: 20px;
+}
+
+#entreestext3 h2, #entreestext3 p {
+  width: 80%;
+}
+
+/* ✅ Text Alignment */
+#entreestext2 h2, #entreestext2 p {
+  width: 80%;
+  text-align: right;
+  
+}
+#entreestext2 p{
+margin-bottom: 30px;}
+/* ✅ Image Adjustments to Match Pizza Content */
+#entreesContent .menu-item img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  opacity: 0.9;
+ 
+}
+
+#entreesContent .menu-item-1 img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+   margin-left: 100px;
+  
+}
+
+#entreesContent .menu-item-2 img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  margin-left: 100px;
+   
+}
+
+/* ✅ Responsive Stacking Below 888px */
+@media (max-width: 888px) {
+  #entreesContent .menu-item,
+  #entreesContent .menu-item-1,
+  #entreesContent .menu-item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #entreestext1, #entreestext2, #entreestext3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    
+  }
+  #entreestext1 p, #entreestext2 p, #entreestext3 p {
+    text-align: center !important;
+  }
+  #entreestext1 h2, #entreestext2 h2, #entreestext3 h2 {
+    text-align: center !important;
+  }
+  #entreesContent .menu-item img {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
+
+/* ✅ Further Adjustments for Small Screens */
+@media (max-width: 480px) {
+  #entreestext1 p, #entreestext2 p, #entreestext3 p {
+    font-size: 16px;
+    text-align: center !important;
+  }
+
+  #entreesContent .menu-item img {
+    width: 90%;
+  }
+}
+
+/*pastas content*/
+/* ✅ Ensure Pastas Content Matches Entrees Content Layout */
+#pastasContent .menu-item {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Text on the left, image on the right */
+ 
+  margin-bottom: 20px;
+  position: relative; /* Prevents affecting other elements */
+}
+
+/* ✅ Image on right, text on left */
+#pastasContent .menu-item-1 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* Text on the left (2/3), image on the right (1/3) */
+  gap: 20px;
+  align-items: center; /* Aligns text & image */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* ✅ Image on left, text on right */
+#pastasContent .menu-item-2 {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: -10px;
+}
+
+/* ✅ Ensure Consistent Text Styling */
+#pastastext1 h2, #pastastext2 h2, #pastastext3 h2 {
+  font-family: "Varela Round", serif;
+  color: #cfd3c4;
+  font-size: 37px; /* Match starter text size */
+  line-height: 1.6;
+  margin: auto;
+}
+
+#pastastext1 p, #pastastext2 p, #pastastext3 p {
+  font-family: "Varela Round", serif;
+  color: #b9beb1;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* ✅ Adjust paragraph width and margin */
+#pastastext1 p {
+  width: 90%;
+  margin-left: revert-layer;
+  margin-bottom: 20px;
+}
+
+#pastastext3 h2, #pastastext3 p {
+  width: 80%;
+}
+
+/* ✅ Text Alignment */
+#pastastext2 h2, #pastastext2 p {
+  width: 80%;
+  text-align: right;
+}
+
+/* ✅ Image Adjustments to Match Entrees Content */
+#pastasContent .menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  opacity: 0.9;
+}
+
+#pastasContent .menu-item-1 img {
+  width: 63%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+  margin-left: 100px;
+}
+
+#pastasContent .menu-item-2 img {
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.75;
+  margin-left: 150px;
+}
+
+/* ✅ Responsive Stacking Below 888px */
+@media (max-width: 1386px) {
+  #pastasContent .menu-item,
+  #pastasContent .menu-item-1,
+  #pastasContent .menu-item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #pastastext1, #pastastext2, #pastastext3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  #pastasContent .menu-item img {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    
+  }
+    #pastastext1 p, #pastastext2 p, #pastastext3 p {
+    font-size: 16px;
+    text-align: center !important;
+  }
+  #pastastext1 h2, #pastastext2 h2, #pastastext3 h2 {
+
+    text-align: center !important;
+  }
+}
+
+/* ✅ Further Adjustments for Small Screens */
+@media (max-width: 480px) {
+  #pastastext1 p, #pastastext2 p, #pastastext3 p {
+    font-size: 16px;
+    text-align: center !important;
+  }
+  #pastastext1 h2, #pastastext2 h2, #pastastext3 h2 {
+
+    text-align: center !important;
+  }
+  #pastasContent .menu-item img {
+    width: 90%;
+    
+  }
+}
+
+
+/* ✅ Force Stacking and Centering Below 888px */
+@media (max-width: 888px) {
+  #startertext2 h2 {
+    text-align: center !important; /* Force text alignment */
+    width: 100% !important; /* Ensure text block spans full width */
+    display: block; /* Prevent inline behaviors */
+  }
+  #startertext2 p {
+    text-align: center !important; /* Force text alignment */
+    width: 100% !important; /* Ensure text block spans full width */
+    display: block; /* Prevent inline behaviors */
+  }
+}
+
+@media (max-width: 888px) {
+  /* Stack all menu items vertically */
+  #startersContent .menu-item, 
+  #startersContent .menu-item-1, 
+  #startersContent .menu-item-2,
+  #pizzaContent .menu-item, 
+  #pizzaContent .menu-item-1, 
+  #pizzaContent .menu-item-2,
+  #entreesContent .menu-item, 
+  #entreesContent .menu-item-1, 
+  #entreesContent .menu-item-2,
+  #pastasContent .menu-item, 
+  #pastasContent .menu-item-1, 
+  #pastasContent .menu-item-2 {
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Center align */
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ✅ Center and expand text */
+  #startertext1, #startertext2, #startertext3,
+  #pizzatext1, #pizzatext2, #pizzatext3,
+  #entreestext1, #entreestext2, #entreestext3,
+  #pastastext1, #pastastext2, #pastastext3 {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  
+  .menu-content-wrapper h2 {
+    text-align: center;
+  }
+
+  #startertext1 h2 {
+    font-family: "Varela Round", serif;
+    color: #cfd3c4;
+    font-size: 28px !important;
+    line-height: 1.6;
+    margin: auto;
+      width: 75%;
+
+
+  }
+  .menu-text {
+    width: 100%; /* Full width for text */
+    text-align: center; /* Center-align text */
+    padding: 10px 20px;
+  }
+
+  /* ✅ Make images responsive and centered */
+  .menu-image {
+    width: 80%; /* Image takes 80% of the width */
+    max-width: 400px; /* Prevents excessive stretching */
+    margin: 10px auto; /* Centers the image */
+  }
+
+  /* ✅ Ensure images inside sections are centered */
+  #startersContent .menu-item img,
+  #startersContent .menu-item-1 img,
+  #startersContent .menu-item-2 img,
+  #pizzaContent .menu-item img,
+  #pizzaContent .menu-item-1 img,
+  #pizzaContent .menu-item-2 img,
+  #entreesContent .menu-item img,
+  #entreesContent .menu-item-1 img,
+  #entreesContent .menu-item-2 img,
+  #pastasContent .menu-item img,
+  #pastasContent .menu-item-1 img,
+  #pastasContent .menu-item-2 img {
+    width: 90%; /* Make images take up most of the width */
+    max-width: 400px; /* Prevent excessive stretching */
+    margin: 10px auto; /* Center the image */
+    display: block;
+  }
+}
+
+/* ✅ Adjustments for Small Screens */
+@media (max-width: 480px) {
+  .menu-title {
+    font-size: 60px;
+    
+  }
+
+  .menu-info, .menu-text p {
+    font-size: 16px;
+    text-align: center; /* Center the paragraph */
+  }
+
+  .menu-image {
+    width: 90%; /* Image takes more width on smaller screens */
+  }
+}
+
+
+/* modal stuff */
+.ingredient {
+    color: #b9beb1;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+}
+.info-blurb {
+    display: none;
+    position: absolute;
+    background: #b9beb1;
+    padding: 10px;
+  color: #33362B;
+/*     border: 1px solid #ccc; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    width: max-content;
+  font-size: 15px;
+    top: 25px;
+    left: 0;
+}

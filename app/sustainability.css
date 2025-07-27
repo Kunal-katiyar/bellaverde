@@ -1,0 +1,1095 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.hero-section .background-image2 {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  background-image: url("https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1753.jpeg?v=1737693941568"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: zoom-in 5s ease-in-out forwards;
+  opacity: 0.9;
+     
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cfd3c4 !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.timeline-container {
+  margin-top: -38px;
+  padding-top: 60px;
+  background-color: #eae8e2 !important;
+}
+.s-headline {
+  padding-bottom: 3%;
+}
+
+.sustainability-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+
+.sustainability-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sus {
+  background-color: #cfd3c4 !important;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensures the image is vertically centered */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensures the image scales within its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  transform: translateX(-150%); /* Start off-screen to the left */
+  transition: transform 0.8s ease-out;
+  padding-right: 70px; /* Smooth animation */
+}
+
+/* Class to trigger the animation */
+.image-container img.animate {
+  transform: translateX(0); /* End position */
+  opacity: 1; /* Fully visible */
+}
+
+.text-container {
+  max-width: 900px; /* Matches the image container width */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures the text is vertically centered */
+}
+
+.text-container h2 {
+  font-family: "Varela Round", serif;
+  color: rgb(113, 125, 90);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-container h1 {
+  margin-top: -15px;
+  font-family: "Pacifico", serif;
+  color: #33362b;
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.text-container p {
+  margin-top: -20px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+  .sustainability-container {
+    grid-template-columns: 1fr; /* Stacks image and text */
+    gap: 20px;
+  }
+
+  .text-container {
+    padding-left: 0; /* Remove left padding for mobile view */
+  }
+}
+
+.text-container-left {
+  max-width: 900px; /* Matches the image container width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures the text is vertically centered */
+}
+
+.text-container-left h2 {
+  font-family: "Varela Round", serif;
+  color: #84955e;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.text-container-left h1 {
+  margin-top: -15px;
+  font-family: "Pacifico", serif;
+  color: #33362b;
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.text-container-left p {
+  margin-top: -20px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+.text-container-left h3 {
+  margin-top: 20px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.5;
+}
+/*this is the contact us button*/
+.arrow-button6 {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Varela Round", serif;
+  display: flex;
+  color: #33362b;
+  opacity: 0.8;
+  background-color: #d1b6ab;
+  padding: 10px 17px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 18px;
+
+  border: none;
+  margin-top: 20px;
+
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-button6 > .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid #33362b;
+  border-bottom: 3px solid #33362b;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.arrow-button6 > .arrow::before {
+  display: block;
+  color: #cfd3c4;
+  background-color: currentColor;
+  width: 4px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-button6:hover > .arrow {
+  transform: rotate(-45deg) translate(5px, 5px);
+  border-color: #cfd3c4;
+}
+
+.arrow-button6:hover > .arrow::before {
+  opacity: 1;
+  width: 10px;
+}
+
+.arrow-button6:hover {
+  background-color: #33362b;
+  color: #cfd3c4;
+  transform: scale(1.03);
+}
+
+.image-container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensures the image is vertically centered */
+}
+
+.image-container-right img {
+  max-width: 100%; /* Ensures the image scales within its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  transform: translateX(150%);
+  transition: transform 0.8s ease-out; /* Smooth animation */
+  padding-left: 70px; /* Adjust padding for right alignment */
+}
+
+/* Class to trigger the animation */
+.image-container-right img.animate {
+  transform: translateX(0); /* End position */
+  opacity: 1; /* Fully visible */
+}
+
+/* Responsive adjustment */
+@media screen and (max-width: 600px) {
+  .sustainability-container {
+    grid-template-columns: 1fr; /* Stacks image and text */
+    gap: 20px;
+  }
+
+  .text-container-left {
+    padding-left: 0; /* Remove padding for better stacking */
+  }
+
+  .image-container-right img {
+    padding-left: 0; /* Remove padding for better stacking */
+  }
+}
+
+.cards-section {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 990px) {
+  .cards-section .background-image3 {
+    display: none;
+  }
+  .cards-section {
+    background-color: #bbbfb2;
+  }
+}
+
+.cards-section .background-image3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  background-image: url("https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-01-05%20at%206.02.08%20PM.png?v=1736121732268"); /* Background image */
+  background-size: cover;
+  background-position: center;
+
+  z-index: -1;
+}
+
+.card1 {
+  margin-top: 80px;
+
+  background-color: #cfd3c4;
+  border-radius: 17px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  max-width: 330px;
+  display: flex; /* Use Flexbox for side-by-side layout */
+  flex-wrap: wrap;
+}
+.card-header img {
+  width: 118%;
+  height: 200px;
+  object-fit: cover !important;
+}
+.card-header {
+  padding: 0 !important;
+}
+.card-body {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: -20px;
+  min-height: 250px;
+  margin-left: 10px;
+}
+.card1:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  border: 2px solid #84955e;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-body .farm.icon {
+  width: 20%;
+
+  margin-top: -45px;
+
+  vertical-align: middle;
+
+  margin-left: 220px;
+  overflow: hidden;
+}
+.card-body h2 {
+  margin-top: 25px;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 30px;
+  margin-bottom: -4px;
+  display: flex;
+}
+.card-info h2 {
+  display: flex;
+  align-items: center;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 15px;
+  opacity: 0.55;
+  padding-bottom: 27px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 25px;
+}
+
+/*arrow icon*/
+.arrow-button {
+  font-family: "Varela Round", serif;
+  display: flex;
+  color: #33362b;
+  opacity: 0.7;
+  background-color: #84955e;
+  padding: 10px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 9px;
+  /*     margin: 0 auto; */
+  border: none;
+  margin-top: 21px;
+  margin-left: -8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-button > .arrow {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #33362b;
+  border-bottom: 2px solid #33362b;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+
+  transition: all 0.3s ease;
+}
+
+.arrow-button > .arrow::before {
+  display: block;
+  color: #cfd3c4;
+  background-color: currentColor;
+  width: 3px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.arrow-button:hover > .arrow {
+  transform: rotate(-45deg) translate(4px, 4px);
+  border-color: #cfd3c4;
+}
+
+.arrow-button:hover > .arrow::before {
+  opacity: 1;
+  width: 8px;
+}
+
+.arrow-button:hover {
+  background-color: #33362b;
+  color: #cfd3c4;
+  transform: scale(1.03);
+}
+
+.quiz-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e7e3d7;
+}
+
+.quiz-active {
+  outline: 100vmax solid rgba(0,0,0,.5);
+}
+
+.quiz h3 {
+  font-family: "Pacifico", serif;
+  color: #33362b;
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.85;
+}
+.quiz p {
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 23px;
+  font-weight: 300;
+  justify-self: center;
+  text-align: center;
+  opacity: 0.5;
+  width: 50%;
+  margin: 0 auto;
+}
+#score {
+  text-align: center;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 30px;
+  font-weight: 200;
+  display: flex;
+}
+.quiz-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 400px;
+  height: auto;
+  padding: 30px;
+
+  background-color: #a0a496;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+.quiz-container h2 {
+  margin-bottom: 65px;
+  margin-top: 23px;
+  width: 97%;
+  justify-self: center;
+  text-align: center;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 30px;
+  font-weight: 200;
+  display: flex;
+}
+.option {
+  display: block;
+  background-color: #cfd3c4;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 17px;
+  opacity: 0.55;
+}
+.option:hover {
+  background: #eae8e2;
+}
+
+.close-btn {
+  background: #d96c6c;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  color: white;
+  width: 35px; /* Set a fixed width */
+  height: 35px; /* Set a fixed height to match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Ensures a perfect circle */
+  font-size: 16px;
+  font-weight: bold;
+  float: right !important;
+}
+.quiz-button-2 {
+  font-family: "Varela Round", serif;
+  display: flex;
+  color: #33362b;
+  opacity: 0.8;
+  background-color: #eae8e2;
+  padding: 5px 60px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 18px;
+  justify-self: center;
+  border: none;
+  margin-top: 20px;
+
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quiz-button-2 > .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid #33362b;
+  border-bottom: 3px solid #33362b;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.quiz-button-2 > .arrow::before {
+  display: block;
+  color: #cfd3c4;
+  background-color: currentColor;
+  width: 4px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.quiz-button-2:hover > .arrow {
+  transform: rotate(-45deg) translate(5px, 5px);
+  border-color: #cfd3c4;
+}
+
+.quiz-button-2:hover > .arrow::before {
+  opacity: 1;
+  width: 10px;
+}
+
+.quiz-button-2:hover {
+  background-color: #33362b;
+  color: #cfd3c4;
+  transform: scale(1.03);
+}
+
+/*this is the contact us button*/
+.quiz-button {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Varela Round", serif;
+  display: flex;
+
+  opacity: 0.8;
+  background-color: #33362b;
+  color: #cfd3c4;
+
+  padding: 13px 33px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 23px;
+  justify-self: center;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quiz-button > .arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 3px solid #cfd3c4;
+  border-bottom: 3px solid #cfd3c4;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.quiz-button > .arrow::before {
+  display: block;
+  color: #33362b;
+  background-color: currentColor;
+  width: 4px;
+  transform-origin: bottom right;
+  height: 2px;
+  position: absolute;
+  opacity: 0;
+  bottom: calc(-2px / 2);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+  content: "";
+  right: 0;
+}
+
+.quiz-button:hover > .arrow {
+  transform: rotate(-45deg) translate(5px, 5px);
+  border-color: #33362b;
+}
+
+.quiz-button:hover > .arrow::before {
+  opacity: 1;
+  width: 10px;
+}
+
+.quiz-button:hover {
+  background-color: #d1b6ab;
+  color: #33362b;
+  transform: scale(1.03);
+}
+
+.container-sus {
+  background-color: #cfd3c4 !important;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 100px;
+}
+.container-dining {
+  background-color: #cfd3c4 !important;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+/* Intro Text */
+.green-dinings {
+  /*     display: flex; in one line*/
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 50px;
+  margin-bottom: -50px !important;
+}
+.green-dinings-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+.green-dining {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 15px;
+}
+.stats-container {
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+.stats-percentage {
+    font-size: 6rem;
+    color: #9bb296;
+}
+.stats-text {
+    font-size: 1.27rem;
+    color: #5d6d59;
+}
+
+@media (max-width: 1167px) {
+  .headline {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .green-dining {
+    padding: 20px;
+  }
+
+  .text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text-dining {
+    font-size: 0.9rem;
+  }
+
+  .circle-dining {
+    width: 180px;
+    height: 180px;
+    margin-left: 0px !important;
+  }
+  
+  .arrow-button6 {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+  font-family: "Varela Round", serif;
+  display: flex;
+  color: #33362b;
+  opacity: 0.8;
+  background-color: #d1b6ab;
+  padding: 10px 17px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+  margin-top: 20px;
+
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+}
+@media (max-width: 600px) {
+  .stats-container {
+width: 50%
+  }
+    .stats-percentage {
+    font-size: 4.5rem;
+ 
+}
+.stats-text {
+    font-size: 1.2rem;
+
+}
+  
+}
+@media (max-width: 480px) {
+
+  .headline {
+    font-size: 1.8rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .green-dining {
+    padding: 15px;
+  }
+
+  .text-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .text-dining {
+    font-size: 0.85rem;
+  }
+
+  .circle-dining {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+#text-bold {
+  display: inline; /* Ensures the span stays inline */
+  white-space: nowrap; /* Prevents text wrapping */
+  /*     vertical-align: baseline; */
+
+  font-family: "Varela Round", serif;
+  color: black;
+  font-weight: bold;
+  font-size: 18.5px;
+  opacity: 1 !important;
+}
+.text-dining {
+  /*   align-items: center; */
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 18.5px;
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+/* Circle Placeholder */
+.circle-dining {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden; /* Ensures the image stays within the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.circle-dining img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the circle */
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.text {
+  margin-left: 50px;
+  width: 63%;
+}
+/* Text Section */
+.text-title {
+  font-family: "Varela Round", serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: rgb(113, 125, 90);
+  display: flex;
+}
+.text-subtitle {
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 20px;
+  font-weight: bold;
+  /*     margin-bottom: 10px; */
+}
+
+/* Title at the Bottom */
+.headline {
+  font-family: "Pacifico", serif;
+  color: #33362b;
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.85;
+}
+.intro-text {
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 23px;
+  font-weight: 300;
+  justify-self: center;
+  text-align: center;
+  opacity: 0.5;
+  width: 50%;
+  margin: 0 auto;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1010px) {
+  .green-dinings {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .green-dining-2 {
+    flex-direction: column;
+  }
+
+  .green-dining {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .text {
+    margin: 0px;
+  }
+
+  .green-dining:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .text-title {
+    justify-content: center !important;
+  }
+  .circle-dining {
+    margin-bottom: 15px;
+  }
+}
+
+/* Techniques Layout */
+.techniques {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 50px;
+  margin-bottom: -50px !important;
+}
+.techniques-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 50px;
+  margin-bottom: 50px;
+}
+
+.technique {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 45%;
+  margin: 60px;
+}
+
+/* Circle Placeholder */
+.circle-placeholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden; /* Ensures the image stays within the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the circle */
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.text {
+  margin-left: 50px;
+}
+/* Text Section */
+.text-title {
+  font-family: "Varela Round", serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: rgb(113, 125, 90);
+  display: flex;
+}
+.text-subtitle {
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 20px;
+  font-weight: bold;
+  /*     margin-bottom: 10px; */
+}
+.text-small {
+  /*   align-items: center; */
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 18.5px;
+  opacity: 0.6;
+}
+
+/* Title at the Bottom */
+.headline {
+  font-family: "Pacifico", serif;
+  color: #33362b;
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.85;
+}
+.intro-text {
+  font-family: "Varela Round", serif;
+  color: #33362b;
+  font-size: 23px;
+  font-weight: 300;
+  justify-self: center;
+  text-align: center;
+  opacity: 0.5;
+  width: 50%;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1238px) {
+  .techniques {
+    flex-direction: column;
+  }
+  .techniques-2 {
+    flex-direction: column;
+  }
+
+  .technique {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .text {
+    margin: 0px;
+  }
+  .text-title {
+    justify-content: center !important;
+  }
+  .circle-placeholder {
+    margin-bottom: 15px;
+  }
+}

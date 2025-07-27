@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Verde</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="carryout.css" />
+
+    <link rel="stylesheet" href="sustainability.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/favicon.ico?v=1738549874466">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="hero-section">
+      <div class="background-image"></div>
+
+      <div class="hero-content">
+        <img
+          class="icon"
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          alt="Logo"
+        />
+        <h1 class="web-name">Bella Verde</h1>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <img
+                  src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0285.png?v=1737581395668"
+                  alt="Home Icon"
+                />
+              </a>
+            </li>
+            <li><a href="/menu.html">Menu</a></li>
+            <li><a href="/about.html" class="active">About</a></li>
+            <li><a href="/sustainability.html">Sustainability</a></li>
+            <li><a href="/reservation.html">Reservations</a></li>
+            <li><a href="/contact.html" class="active">Contact</a></li>
+            <li><a href="/order.html">Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section: Core Values -->
+    <div class="sustainability-background">
+      <div class="sustainability-container">
+        <div class="text-container-left">
+          <h2>An authentic vegetarian cuisine</h2>
+          <h1>Our Restaurant</h1>
+          <p>
+            At Bella Verde, we celebrate and uphold the rich culinary traditions of Mediterranean and Italian cuisine with fresh, locally sourced ingredients and vibrant flavors. Guided by our cоmmitment to sustainability a‍nd our passion for producing hіgh-quality food, we create healthy vegetarian and vegan dіshes to bring you an excellent dining experience. 
+          </p>
+          <a href="/reservation.html" style="text-decoration: none">
+            <button class="arrow-button6">
+              Book a reservation<span class="arrow"></span>
+            </button>
+          </a>
+          <!--           <h3>123 Greenfield Lane Springfield, NY 12345</h3> -->
+        </div>
+        <div class="image-container-right">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1752.jpeg?v=1737693979571"
+            alt="Sustainable Dining Image"
+            class="slide-in"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+      <div class="background-image4"></div>
+      <div class="info-container">
+        <div class="info-box">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0951-removebg-preview.png?v=1736284068191"
+            alt="Location Icon"
+          />
+          <h2>Our Location</h2>
+          <p>
+            Our restaurant is conveniently accessible via public transport,
+            making it easy for you to visit and stop by for relaxing dining.
+          </p>
+          <a href="/contact.html#contact-loc">
+            <button class="arrow-button2">
+              Learn More <span class="arrow"></span>
+            </button>
+          </a>
+        </div>
+        <div class="info-box">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0952-removebg-preview.png?v=1736284108430"
+            alt="Mission Icon"
+          />
+          <h2>Our Mission</h2>
+          <p>
+          Our mission is to care for you and the planet. Every dish is made with sustainable practices, committed to a better future for all.
+          </p>
+          <a href="/sustainability.html">
+            <button class="arrow-button2">
+              Learn More <span class="arrow"></span>
+            </button>
+          </a>
+        </div>
+        <div class="info-box">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_0953-removebg-preview.png?v=1736284150741"
+            alt="Ingredients Icon"
+          />
+          <h2>Our Ingredients</h2>
+          <p>
+            Our ingredients are high-quality and fresh, sourced directly from
+            local farmers and markets to bring you meals that are sustainable.
+          </p>
+          <a href="/menu.html">
+            <button class="arrow-button2">
+              Learn More <span class="arrow"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="learn-more">
+        <a href="/sustainability.html" style="text-decoration: none">
+          <button class="arrow-button6" id="learnmore">
+            Learn more about our sustainability <span class="arrow"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: About Us -->
+    <div class="sustainability-background">
+      <div class="container2">
+        <div class="image-container2">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1751.jpeg?v=1737693977753"
+            alt="Sustainable Dining Image"
+            class="slide-in"
+          />
+        </div>
+        <div class="text-container2">
+          <h2>Core values</h2>
+          <h1>About us</h1>
+          <p>
+            We bring the heart of Mediterranean and Italian traditions to your
+            plate with a healthy and plant-based twist. Each dish is crafted to
+            honor the rich culinary traditions of these regions and celebrates the
+            vibrant flavor of fresh ingredients. From
+            hand-rolled pastas to slow-roasted vegetables, our menu 
+            brings you authentic flavors while staying true to our
+            commitment to sustainability.
+          </p>
+          <a href="/about.html" style="text-decoration: none">
+            <button class="arrow-button6">
+              Learn more <span class="arrow"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Categories -->
+    <section class="menus">
+      <div class="menu-grid">
+        <!-- Starter Card -->
+        <div class="menu-card">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-02-01%20at%208.33.22%20PM.png?v=1738463618287"
+            alt="Starters"
+          />
+          <div class="overlay">
+            <h2>Starters</h2>
+            <a href="menu.html#tabStarters" style="text-decoration: none">
+              <button class="arrow-button3">
+                click here<span class="arrow"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pizza Card -->
+        <div class="menu-card">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-01-09%20at%207.33.03%20PM.png?v=1736472838919"
+            alt="Pizzas"
+          />
+          <div class="overlay">
+            <h2>Pizzas</h2>
+            <a href="menu.html#tabPizzas" style="text-decoration: none">
+              <button class="arrow-button3">
+                click here<span class="arrow"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Entrees Card -->
+        <div class="menu-card">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-02-01%20at%209.18.30%20PM.png?v=1738466315048"
+            alt="Entrees"
+          />
+          <div class="overlay">
+            <h2>Entrées</h2>
+            <a href="menu.html#tabEntrees" style="text-decoration: none">
+              <button class="arrow-button3">
+                click here<span class="arrow"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pasta Card -->
+        <div class="menu-card">
+          <img
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot%202025-02-01%20at%208.33.02%20PM.png?v=1738463627322"
+            alt="Pastas"
+          />
+          <div class="overlay">
+            <h2>Pastas</h2>
+            <a href="menu.html#tabPastas" style="text-decoration: none">
+              <button class="arrow-button3">
+                click here<span class="arrow"></span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Explore Sauces -->
+    <section class="sauces">
+      <div class="background-image6"></div>
+
+      <div class="sauce-container">
+        <img
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-09_at_8.30.29_PM-removebg-preview.png?v=1736476268554"
+          alt="Sauce 1"
+        />
+        <img
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-09_at_8.08.32_PM-removebg-preview.png?v=1736476416664"
+          alt="Sauce 2"
+        />
+        <img
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-09_at_8.08.41_PM-removebg-preview.png?v=1736476573162"
+          alt="Sauce 3"
+        />
+        <img
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-09_at_8.08.53_PM-removebg-preview.png?v=1736476566518"
+          alt="Sauce 4"
+        />
+        <img
+          src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-09_at_8.09.12_PM-removebg-preview.png?v=1736476579276"
+          alt="Sauce 5"
+        />
+      </div>
+      <a
+        href="/menu.html#tabSauces"
+        style="text-decoration: none"
+      >
+        <button class="arrow-button4">
+          Taste the difference<span class="arrow"></span>
+        </button>
+      </a>
+    </section>
+
+    <!-- Section: Meet The Chefs -->
+    <div class="chefs-background">
+      <section class="chefs-section">
+        <div class="background-image7"></div>
+        <div class="chefs-container">
+          <!-- Left Content -->
+          <div class="chefs-intro">
+            <h1>Meet The Chefs</h1>
+            <p>
+              Our team of chefs works incredibly hard to ensure that all of our
+              dishes are made at a very high quality, 100% of the time. They
+              embrace our mission of sustainability by reducing food
+              waste and keeping energy usage to a minimum, all while making sure
+              that only the best quality food reaches your table.
+            </p>
+            <a href="/menu.html" style="text-decoration: none">
+              <button class="arrow-button4" id="chefsbutton">
+                Taste the freshness <span class="arrow"></span>
+              </button>
+            </a>
+          </div>
+
+          <!-- Right Grid of Chefs -->
+          <div class="chefs-grid">
+            <div class="chef">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1866.jpeg?v=1738457490169"
+              />
+              <p>Chef 1</p>
+            </div>
+            <div class="chef">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1866.jpeg?v=1738457490169"
+              />
+              <p>Chef 2</p>
+            </div>
+            <div class="chef">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1866.jpeg?v=1738457490169"
+              />
+              <p>Chef 3</p>
+            </div>
+            <div class="chef">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1866.jpeg?v=1738457490169"
+              />
+              <p>Chef 4</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Section: Customer Reviews -->
+    <section class="reviews">
+      <div class="background-image5">
+        <h1>Customer Reviews</h1>
+      </div>
+      <div class="slider">
+        <div class="slide-row" id="slide-row">
+          <div class="slide-col">
+            <div class="content">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1871.jpeg?v=1738460503798"
+              />
+              <p>
+                "Bella Verde's experience is absolutely stunning. The vibrant
+                flavors, the quality of the ingredients, their exquisite
+                presentation, and the relaxed atmosphere make their place worth
+                a visit."
+              </p>
+              <h2>Linguini</h2>
+            </div>
+           
+          </div>
+          <div class="slide-col">
+             <div class="content">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1871.jpeg?v=1738460503798"
+              />
+              <p>
+                "Even after learning about Bella Verde's mission to
+                sustainability, I was, to say the least, amazed to know that the
+                delicious food I had just eaten was all sourced locally and
+                seasonally."
+        
+              </p>
+              <h2>Remy</h2>
+            </div>
+          </div>
+          <div class="slide-col">
+            <div class="content">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1871.jpeg?v=1738460503798"
+              />
+              <p>
+                "Definitely worth another visit. The delicious food and the
+                commitment to sustainability are just unmatched by any other place I've
+                ever eaten at."
+              </p>
+              <h2>Ego</h2>
+            </div>
+          </div>
+          <div class="slide-col">
+            <div class="content">
+              <img
+                src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1871.jpeg?v=1738460503798"
+              />
+              <p>
+                "There is no doubt about it, Bella Verde is leading the way
+                toward a more sustainable and eco-friendly future, all while
+                serving delicious food and promoting a sense of community."
+              </p>
+              <h2>Colette</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="indicator">
+        <span class="btn active"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <img
+            class="footer-img"
+            src="https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/picsvg_download%20(3).svg?v=1738538452930"
+          />
+          <h3>Bella Verde</h3>
+<!--           <p>© [Insert Copyright Here]</p> -->
+        </div>
+        <div class="footer-col">
+          <h4>Learn More</h4>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#reference-page">Reference Page</a></li>
+            <li><a href="sustainability.html">Sustainability</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" id="reserve">
+          <h4>Dine-In</h4>
+          <ul class="links">
+            <a href="/reservation.html" style="text-decoration: none">
+              <button class="arrow-button6">
+                Book a reservation<span class="arrow"></span>
+              </button>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col" id="carryout">
+          <div class="container">
+            <h4>Carry-Out Form</h4>
+            <button class="arrow-button6" onclick="openOrderForm()">Place an order<span class="arrow"></span></button>
+
+          </div>
+        </div>
+        <div class="footer-col" id="newletter-col">
+          <h4>Newsletter</h4>
+          <p>
+            Stay connected with our plant-based kitchen! Subscribe to our
+            newsletter for fresh updates on seasonal vegan & vegetarian dishes,
+            and behind-the-scenes looks at our farm-to-table process.
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+<div id="orderModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeOrderForm()">&times;</span>
+<!--         <h2>Menu</h2>
+ -->
+        <form id="orderForm">
+            <!-- Starters Section -->
+            <div class="menu-section" id="step1">
+                <h3>Starters</h3>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_7.32.47_PM-removebg-preview.png?v=1737423185933">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Mezze-Platter" data-price="14">Mediterranean Mezze Platter</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Mezze-Platter" id="Mediterranean-Mezze-Platter" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_12.04.36_AM-removebg-preview.png?v=1742187903052">
+               <div class="ordering_grid">
+                <label for="Tomato-Burrata" data-price="12">Tomato Burrata</label>
+                  <h4>$12.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Tomato-Burrata" id="Tomato-Burrata" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/IMG_1694-removebg-preview.png?v=1737426805949">
+               <div class="ordering_grid">
+                <label for="Roasted-Beet-Carpaccio" data-price="14">Roasted Beet Carpaccio</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Roasted-Beet-Carpaccio" id="Roasted-Beet-Carpaccio" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+                <button class= "buttonlol" type="button" onclick="nextStep(2)">Next</button>
+            </div>
+
+            <!-- Pizzas Section -->
+            <div class="menu-section" id="step2" style="display: contents;">
+                <h3>Pizzas</h3>
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.01_PM-removebg-preview%20(1).png?v=1737430683124">
+               <div class="ordering_grid">
+                <label for="Hot-Honey-Pizza" data-price="15">Hot Honey Pizza</label>
+                  <h4>$15.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Hot-Honey-Pizza" id="Hot-Honey-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_1.54.06_PM-removebg-preview.png?v=1742237662561">
+               <div class="ordering_grid">
+                <label for="Margherita-Pizza" data-price="14">Magherita Pizza</label>
+                  <h4>$14.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Margherita-Pizza" id="Margherita-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.14_PM-removebg-preview.png?v=1737430677826">
+               <div class="ordering_grid">
+                <label for="Wild-Mushroom-Truffle-Pizza" data-price="17">Wild Mushroom Truffle Pizza</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Wild-Mushroom-Truffle-Pizza" id="Wild-Mushroom-Truffle-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+               <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-20_at_9.37.19_PM-removebg-preview.png?v=1737430680546">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Delight-Pizza" data-price="16">Mediterranean Delight Pizza</label>
+                  <h4>$16.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Delight-Pizza" id="Mediterranean-Delight-Pizza" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+                <button class= "buttonlol" type="button" onclick="nextStep(3)">Next</button>
+            </div>
+
+            <!-- Entrees Section -->
+            <div class="menu-section" id="step3" style="display: none;">
+                <h3>Entrees</h3>
+                <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.39.53_PM-removebg-preview.png?v=1737924042925">
+               <div class="ordering_grid">
+                <label for="Eggplant-Parmesan" data-price="18">Eggplant Parmesan</label>
+                  <h4>$18.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Eggplant-Parmesan" id="Eggplant-Parmesan" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-17_at_2.09.24_PM-removebg-preview.png?v=1742238615524">
+               <div class="ordering_grid">
+                <label for="Stuffed-Bell-Peppers" data-price="17">Stuffed Bell Peppers</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Stuffed-Bell-Peppers" id="Stuffed-Bell-Peppers" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_2.41.50_PM-removebg-preview.png?v=1737924137007">
+               <div class="ordering_grid">
+                <label for="Mediterranean-Veggie-Bowl" data-price="16">Mediterranean Veggie Bowl</label>
+                  <h4>$16.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Mediterranean-Veggie-Bowl" id="Mediterranean-Veggie-Bowl" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+               <div class="ordering2">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.11.13_PM-removebg-preview.png?v=1737925891693">
+               <div class="ordering_grid">
+                <label for="Falafel-Platter" data-price="15">Falafel Platter</label>
+                  <h4>$15.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Falafel-Platter" id="Falafel-Platter" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+                <button class = "buttonlol" type="button" onclick="nextStep(4)">Next</button>
+            </div>
+
+            <!-- Pastas Section -->
+            <div class="menu-section" id="step4" style="display: none;">
+              
+                <h3>Pastas</h3>
+              <div class="ordering3">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.03.29_PM-removebg-preview.png?v=1737925459752">
+               <div class="ordering_grid">
+                <label for="Pesto-alla-Genovese" data-price="18">Pesto alla Genovese</label>
+                  <h4>$18.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Pesto-alla-Genovese" id="Pesto-alla-Genovese" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.02.29_AM-removebg-preview.png?v=1742274171196">
+
+               <div class="ordering_grid">
+                 
+                <label for="Eggplant-Lasagna" data-price="20">Eggplant Lasagna</label>
+                  <h4>$20.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Eggplant-Lasagna" id="Eggplant-Lasagna" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              <div class="ordering3">
+              <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.03.47_AM-removebg-preview.png?v=1742274294091">
+              
+               <div class="ordering_grid">
+                <label for="Lumache-alla-Vodka" data-price="17">Lumache alla Vodka</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Lumache-alla-Vodka" id="Lumache-alla-Vodka" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+             
+                
+              
+               <div class="ordering3" id="takeout1">
+              <img src= "https://cdn.glitch.global/122131af-93a3-40f2-9eab-78f46d4e0350/Screenshot_2025-01-26_at_3.05.24_PM-removebg-preview.png?v=1737925553047">
+              
+               <div class="ordering_grid">
+                <label for="Cacio-e-Pepe" data-price="19">Cacio e Pepe</label>
+                  <h4>$19.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Cacio-e-Pepe" id="Cacio-e-Pepe" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3" id="takeout2">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.08.07_AM-removebg-preview.png?v=1742274505102">
+             
+               <div class="ordering_grid">
+                <label for="Rigatoni-alla-Norma" data-price="17">Rigatoni alla Norma</label>
+                  <h4>$17.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Rigatoni-alla-Norma" id="Rigatoni-alla-Norma" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+              
+              <div class="ordering3" id="takeout3">
+               <img src= "https://cdn.glitch.global/d9fa88c7-2ade-476e-87da-a48a75aad999/Screenshot_2025-03-18_at_12.05.52_AM-removebg-preview.png?v=1742274372767">
+             
+               <div class="ordering_grid">
+                <label for="Campanelle-al-Tartufo" data-price="22">Campanelle al Tartufo</label>
+                  <h4>$22.00
+                    </h4>
+                   </div>
+                <div class="ordering_grid2">
+                <div class="qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+                    <input class="product-qty" type="number" name="Campanelle-al-Tartufo" id="Campanelle-al-Tartufo" min="0" max="10" value="0">
+                    <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+                </div>
+                    <h2>
+                       
+                  </h2>
+                  </div>
+                 
+                 </div>
+                
+                <button class = "buttonlol" type="button" onclick="showSummary()">Next</button>
+            </div>
+
+            <!-- Checkout Section (Order Summary) -->
+            <div class="menu-section" id="step5" style="display: none;">
+                <h3>Order Summary</h3>
+                <div id="orderSummary"></div>
+                <p>Total Price: <span id="totalPrice"></span></p>
+                <p>Pickup Time: <span id="pickupTime"></span></p>
+                <button class = "buttonlol" type="button" onclick="showCheckout()">Proceed to Checkout</button>
+            </div>
+
+            <!-- Payment Section (Hidden initially) -->
+<!-- Payment Section -->
+<!-- Payment Section (initially hidden) -->
+<div id="paymentSection">
+    <h1>Payment</h1>
+<div class="payment-option">
+    <input type="checkbox" id="credit-card-checkbox" name="credit-card" />
+    <span>Credit Card</span>
+</div>
+
+
+
+
+    <!-- Credit Card Info -->
+    <div id="credit-card-info" class="payment-info">
+      <div class ="group">
+        
+     
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" placeholder="Card number" required>
+ </div>
+      <div class ="group">
+        <label for="exp-date">Expiration Date</label>
+        <input type="text" id="exp-date" placeholder="MM/YY" required>
+      </div>
+      <div class ="group">
+        <label for="security-code">Security Code</label>
+        <input type="text" id="security-code" placeholder="Security code" required>
+      </div>
+      <div class ="group">
+        <label for="name-on-card">Name on Card</label>
+        <input type="text" id="name-on-card" placeholder="Name on card" required>
+      </div>
+        <div class ="group">
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Address" required>
+          
+      </div>
+              <div class ="group">
+        <label for="zip-code">Zip-code</label>
+        <input type="text" id="zip-code" placeholder="Zip-code" required>
+          
+      </div>
+    </div>
+  <div class="payment-option">
+    <input type="checkbox" id="pay-in-store-checkbox" name="pay-in-store" />
+    <span>Pay in store</span>
+</div>
+
+    <!-- Error Message (Initially hidden) -->
+    <div id="error-message" style="color: #bd2929; display: none;">
+        <p>Please select a payment option (either Credit Card or Pay in Store).</p>
+    </div>
+
+    <!-- Pay Now Button -->
+  <button class="buttonlol2" type="button" id="pay-now-button" onclick="validatePayment()">Place Order</button>
+
+
+</div>
+<!-- Thank You Page (Final Step) -->
+<div id="thankYouPage" style = "display: none">
+    <h1>Thank you for your order!</h1>
+  <div class = "back">
+    
+  
+    <p>By choosing <i>Bella Verde's</i> plant-based meals, you've saved approximately <br><span id="co2Saved">2.5</span> <span id = "of-this"><br>of CO2 this month!</span></p>
+    
+    <!-- Radial Progress Bar -->
+    <div class="co2 grid">
+      
+  
+    <div class="progress-radial progress-70">
+        <b>70%</b>
+
+    </div>
+
+    <p>This represents how much CO2 emissions are reduced when switching from a traditional meat-based meal to a plant-based one.</p>
+        </div>
+    <br>
+    <p id= "proudText">We’re proud to be 100% plant-based, making every meal a contribution to a healthier planet. Thanks for being part of the change!</p>
+</div>
+
+</div>
+
+
+
+        </form>
+    </div>
+</div>
+
+<script>
+    // Function to open the order form modal
+function openOrderForm() {
+    document.getElementById("orderModal").style.display = "block";
+    
+    showStep(1);  // Start from the first step
+}
+
+    // Function to close the modal
+function closeOrderForm() {
+    document.getElementById("orderModal").style.display = "none";
+    document.getElementById('paymentSection').style.display = 'none'; 
+    document.getElementById('thankYouPage').style.display = 'none'; 
+  resetSelections();// Hide the Thank You page
+}
+
+
+    // Show a specific step
+function showStep(step) {
+    let steps = document.querySelectorAll(".menu-section");
+    steps.forEach((section) => section.style.display = "none");
+
+    if (step === 'thankYouPage') {
+        document.getElementById('thankYouPage').style.display = "block";  // Show Thank You page
+    } else {
+        const stepElement = document.getElementById(`step${step}`);
+        if (stepElement) {
+            stepElement.style.display = "block";  // Show the appropriate step
+        }
+    }
+}
+
+
+
+    // Next step navigation
+    function nextStep(step) {
+        showStep(step);
+    }
+
+    // Update the quantity for a specific item
+    function updateQuantity(itemId, change) {
+        const itemInput = document.getElementById(itemId);
+        let currentQuantity = parseInt(itemInput.value);
+        currentQuantity += change;
+        if (currentQuantity < 0) currentQuantity = 0;
+        itemInput.value = currentQuantity;
+    }
+
+    // Show order summary before checkout
+    function showSummary() {
+        let selectedItems = [];
+        let totalPrice = 0;
+
+        // Collect selected items and their quantities
+        ['Mediterranean-Mezze-Platter','Tomato-Burrata' ,'Roasted-Beet-Carpaccio','Hot-Honey-Pizza','Margherita-Pizza','Wild-Mushroom-Truffle-Pizza','Mediterranean-Delight-Pizza','Eggplant-Parmesan','Stuffed-Bell-Peppers','Mediterranean-Veggie-Bowl','Falafel-Platter','Pesto-alla-Genovese','Eggplant-Lasagna','Lumache-alla-Vodka', 'Cacio-e-Pepe','Rigatoni-alla-Norma','Campanelle-al-Tartufo'].forEach((itemId) => {
+            const quantity = parseInt(document.getElementById(itemId).value);
+            if (quantity > 0) {
+                const price = parseFloat(document.querySelector(`label[for=${itemId}]`).dataset.price);
+                selectedItems.push(`${itemId} x${quantity} - $${(price * quantity).toFixed(2)}`);
+                totalPrice += price * quantity;
+            }
+        });
+
+        if (selectedItems.length === 0) {
+            alert("Please select at least one item.");
+            return;
+        }
+
+        let orderSummaryHtml = `<ul>`;
+        selectedItems.forEach((item) => {
+            orderSummaryHtml += `<li>${item}</li>`;
+        });
+        orderSummaryHtml += `</ul>`;
+
+        document.getElementById("orderSummary").innerHTML = orderSummaryHtml;
+        document.getElementById("totalPrice").innerText = `$${totalPrice.toFixed(2)}`;
+        document.getElementById("pickupTime").innerText = calculatePickupTime();
+
+        showStep(5); // Go to the final checkout step
+    }
+
+    // Show checkout (payment options)
+
+// function showCheckout() {
+//     const paymentSection = document.getElementById('paymentSection');
+    
+    
+//     paymentSection.classList.add('show'); 
+    
+    
+//     showStep(6); 
+// }
+function showCheckout() {
+    const paymentSection = document.getElementById('paymentSection');
+    
+    // Make sure the payment section becomes visible directly after order summary
+    paymentSection.style.display = 'block'; 
+    
+    // You no longer need to call showStep(6)
+    document.getElementById('step5').style.display = 'none'; // Hide the order summary section if needed
+}
+
+    // Calculate the pickup time (e.g., 30 minutes from now)
+    function calculatePickupTime() {
+        let now = new Date();
+        now.setMinutes(now.getMinutes() + 30);
+        return now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    }
+
+    // Reset selections after closing the modal
+function resetSelections() {
+    // Reset the product quantities
+    document.querySelectorAll('input[type="number"]').forEach((input) => {
+        input.value = 0;
+    });
+    
+    // Reset order summary
+    document.getElementById("orderSummary").innerHTML = "";
+    document.getElementById("totalPrice").innerText = "$0.00";
+    document.getElementById("pickupTime").innerText = "";
+    
+    // Reset the payment section
+    const creditCardCheckbox = document.getElementById('credit-card-checkbox');
+    const payInStoreCheckbox = document.getElementById('pay-in-store-checkbox');
+    const creditCardInfo = document.getElementById('credit-card-info');
+    
+    // Uncheck payment options
+    creditCardCheckbox.checked = false;
+    payInStoreCheckbox.checked = false;
+    
+    // Hide credit card info section if unchecked
+    creditCardInfo.style.display = 'none';
+    
+    // Reset credit card input fields
+    document.getElementById('card-number').value = '';
+    document.getElementById('exp-date').value = '';
+    document.getElementById('security-code').value = '';
+    document.getElementById('name-on-card').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById('zip-code').value = '';
+    
+    // Hide error message
+    document.getElementById('error-message').style.display = 'none';
+}
+
+
+    // Confirm Order
+    function confirmOrder() {
+        alert("Order Confirmed!");
+        closeOrderForm();
+    }
+</script>
+
+  <!--payment if statements-->
+<script>
+// Get the credit card checkbox, pay-in-store checkbox, and error message elements
+const creditCardCheckbox = document.getElementById('credit-card-checkbox');
+const payInStoreCheckbox = document.getElementById('pay-in-store-checkbox');
+const creditCardInfo = document.getElementById('credit-card-info');
+const errorMessage = document.getElementById('error-message');
+
+// Function to toggle visibility of the credit card input fields
+function toggleCreditCardInfo() {
+    // If credit card is checked and Pay in Store is not, show credit card fields
+    if (creditCardCheckbox.checked && !payInStoreCheckbox.checked) {
+        creditCardInfo.style.display = 'block'; // Show credit card info
+    } else {
+        creditCardInfo.style.display = 'none';  // Hide credit card info if Pay in Store is selected or Credit Card is unchecked
+    }
+}
+
+// Function to validate payment option before submitting
+// Function to validate payment selection and navigate to "Thank You" page
+// function validatePayment() {
+//     if (!creditCardCheckbox.checked && !payInStoreCheckbox.checked) {
+//         errorMessage.style.display = 'block'; 
+//     } else {
+//         errorMessage.style.display = 'none'; 
+//         goToThankYouPage();  
+//     }
+// }
+  
+  function uncheckOtherCheckbox(checkbox) {
+    const creditCardCheckbox = document.getElementById('credit-card-checkbox');
+    const payInStoreCheckbox = document.getElementById('pay-in-store-checkbox');
+
+    // If one checkbox is checked, uncheck the other
+    if (checkbox === creditCardCheckbox && creditCardCheckbox.checked) {
+        payInStoreCheckbox.checked = false; // Uncheck the Pay in Store checkbox
+    } else if (checkbox === payInStoreCheckbox && payInStoreCheckbox.checked) {
+        creditCardCheckbox.checked = false; // Uncheck the Credit Card checkbox
+    }
+
+    // Call the toggle function to show/hide credit card info
+    toggleCreditCardInfo();
+}
+document.getElementById('credit-card-checkbox').addEventListener('change', function() {
+    uncheckOtherCheckbox(this);  // Calls the function to uncheck the other checkbox
+});
+document.getElementById('pay-in-store-checkbox').addEventListener('change', function() {
+    uncheckOtherCheckbox(this);  // Calls the function to uncheck the other checkbox
+});
+
+function validatePayment() {
+    const creditCardCheckbox = document.getElementById('credit-card-checkbox');
+    const payInStoreCheckbox = document.getElementById('pay-in-store-checkbox');
+    const errorMessage = document.getElementById('error-message');
+    const creditCardInfo = document.getElementById('credit-card-info');
+    
+    // If neither payment option is selected, show error
+    if (!creditCardCheckbox.checked && !payInStoreCheckbox.checked) {
+        errorMessage.style.display = 'block';
+        errorMessage.innerText = "Please select a payment option (either Credit Card or Pay in Store).";
+        return;
+    }
+    
+    // If Credit Card is selected, validate the credit card fields
+    if (creditCardCheckbox.checked) {
+        const cardNumber = document.getElementById('card-number').value.trim();
+        const expDate = document.getElementById('exp-date').value.trim();
+        const securityCode = document.getElementById('security-code').value.trim();
+        const nameOnCard = document.getElementById('name-on-card').value.trim();
+        const address = document.getElementById('address').value.trim();
+        const zipCode = document.getElementById('zip-code').value.trim();
+
+        let valid = true;
+        let validationMessage = "";
+
+        // Validate card number (16 digits)
+        if (!/^\d{16}$/.test(cardNumber)) {
+            valid = false;
+            validationMessage += "Please enter a valid 16-digit card number.\n";
+        }
+
+        // Validate expiration date (MM/YY format)
+        if (!/^\d{2}\/\d{2}$/.test(expDate)) {
+            valid = false;
+            validationMessage += "Please enter a valid expiration date (MM/YY).\n";
+        }
+
+        // Validate security code (3 digits)
+        if (!/^\d{3}$/.test(securityCode)) {
+            valid = false;
+            validationMessage += "Please enter a valid 3-digit security code.\n";
+        }
+
+        // Validate name on card
+        if (nameOnCard === "") {
+            valid = false;
+            validationMessage += "Please enter the name on the card.\n";
+        }
+
+        // Validate address
+        if (address === "") {
+            valid = false;
+            validationMessage += "Please enter your address.\n";
+        }
+
+        // Validate zip code
+ // Validate zip code (must be numeric)
+if (!/^\d+$/.test(zipCode)) {
+    valid = false;
+    validationMessage += "Please enter a valid numeric zip code.\n";
+} else if (zipCode.length < 5 || zipCode.length > 10) { 
+    // Optional: Adjust the length check based on your region's zip code format
+    valid = false;
+    validationMessage += "Zip code must be between 5 to 10 digits.\n";
+}
+
+        // If any field is invalid, show the error message and return
+        if (!valid) {
+            errorMessage.style.display = 'block';
+            errorMessage.innerText = validationMessage;
+            return;
+        }
+    }
+
+    // Hide the error message if everything is valid
+    errorMessage.style.display = 'none';
+
+    // Proceed to the Thank You page if everything is valid
+    goToThankYouPage();
+}
+
+
+// Function to navigate to the "Thank You" page (final step)
+function goToThankYouPage() {
+    document.getElementById('paymentSection').style.display = 'none';  // Hide the payment section
+    showStep('thankYouPage');  // Navigate to the "Thank You" page
+  
+}
+
+  
+
+
+// Event listeners to trigger the toggle function when checkboxes are clicked
+creditCardCheckbox.addEventListener('change', toggleCreditCardInfo);
+payInStoreCheckbox.addEventListener('change', toggleCreditCardInfo);
+
+// Initial check to set visibility based on default checkbox states (in case they're pre-selected)
+toggleCreditCardInfo();
+
+// Attach the validatePayment function to the "Place Order" button
+document.getElementById('pay-now-button').addEventListener('click', function() {
+    validatePayment();  // Call validatePayment() when "Place Order" is clicked
+  
+});
+  
+  
+
+  
+
+
+
+  
+    </script>
+    
+    <!-- radial progress bar-->
+    <script>
+      // This function will update the CO2 savings and the radial progress bar
+function updateCO2Progress() {
+    // Fixed value for simplicity (70% CO2 saved)
+    let co2Saved = 2.5;  // Example value for CO2 savings
+    document.getElementById("co2Saved").innerText = co2Saved + " kg";  // Display in text
+    
+    // Calculate percentage (for example, let's keep it at 70%)
+    let percentageSaved = 70;
+
+    // Update the radial progress bar
+    let progressClass = "progress-" + percentageSaved;  // e.g., progress-70 for 70% savings
+
+    // Apply the class to the progress element
+    let progressElement = document.querySelector('.progress-radial');
+    progressElement.className = 'progress-radial ' + progressClass;  // Apply the class for 70% progress
+}
+
+// Initialize the progress bar on page load
+window.onload = updateCO2Progress;
+
+    </script>
+    <!--sustainability page-->
+    <!--js for reviews-->
+    <script>
+      const btns = document.querySelectorAll(".btn");
+      const slideRow = document.getElementById("slide-row");
+      const slider = document.querySelector(".slider");
+
+      let currentIndex = 0;
+
+      function updateSlide() {
+        const sliderWidth = slider.offsetWidth;
+        const translateValue = currentIndex * -sliderWidth;
+        slideRow.style.transform = `translateX(${translateValue}px)`;
+
+        // Update active button
+        btns.forEach((btn, index) => {
+          btn.classList.toggle("active", index === currentIndex);
+        });
+      }
+
+      btns.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlide();
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        updateSlide(); // Recalculate on resize
+      });
+    </script>
+  </body>
+
+  <!--js for navbar-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("mobile-menu");
+      const navBar = document.querySelector(".navigation-bar");
+
+      menuToggle.addEventListener("click", function () {
+        navBar.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <!--start of js for sliding image-->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Select all images for animation
+      const images = document.querySelectorAll(
+        ".image-container-right img, .image-container-left img"
+      );
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top <
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.bottom > 0
+        );
+      }
+
+      // Add scroll event listener
+      function handleScroll() {
+        images.forEach((img) => {
+          // Check if each image is in the viewport and has not been animated
+          if (isInViewport(img) && !img.classList.contains("animate")) {
+            img.classList.add("animate"); // Add the animation class
+          }
+        });
+      }
+
+      // Attach the scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+      // Initial check for images already in the viewport
+      handleScroll();
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const images = document.querySelectorAll(".image-container2 img");
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Add event listener for scroll
+      function handleScroll() {
+        images.forEach((img) => {
+          if (isInViewport(img) && !img.classList.contains("animate")) {
+            img.classList.add("animate"); // Add the animation class
+          }
+        });
+
+        // Check if all images have been animated
+        const allAnimated = Array.from(images).every((img) =>
+          img.classList.contains("animate")
+        );
+
+        // If all images are animated, remove the scroll listener
+        if (allAnimated) {
+          window.removeEventListener("scroll", handleScroll);
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll); // Listen for scroll events
+      handleScroll(); // Trigger on load in case some images are already in the viewport
+    });
+  </script>
+  <script>
+  document.querySelectorAll('.qty-count').forEach(button => {
+    button.addEventListener('click', function() {
+        const action = this.dataset.action;
+        const input = this.closest('.qty-input').querySelector('.product-qty');
+        let quantity = parseInt(input.value);
+        const min = input.getAttribute('min');
+        const max = input.getAttribute('max');
+
+        // Increase quantity
+        if (action === 'add' && quantity < max) {
+            quantity++;
+        }
+        // Decrease quantity
+        else if (action === 'minus' && quantity > min) {
+            quantity--;
+        }
+
+        input.value = quantity;
+    });
+});
+</script>
+</html>
